@@ -51,7 +51,7 @@ const javaSdk = new JavaProfileSdk();
 You can pass optional arguments to the constructor:
 
 - `provider` - custom RPC Provider instance if you want to use custom configuration, if not provided defaults to provider with random node from the [list of RPC nodes](src/utils/getRpcUrl.ts)
-- `chainId` - what chain ID to use, if not provided defaults to `56`
+- `chainId` - what chain ID to use, if not provided defaults to `137`
 
 ```js
 import JavaProfileSdk from "@javaswap/profile-sdk";
@@ -59,7 +59,7 @@ import { ethers } from "ethers";
 
 const customProvider = new ethers.providers.JsonRpcProvider("https://example.com");
 
-const javaSdk = new JavaProfileSdk(customProvider, 97);
+const javaSdk = new JavaProfileSdk(customProvider, 80001);
 ```
 
 ### getUsername
