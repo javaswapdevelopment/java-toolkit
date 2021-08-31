@@ -24,25 +24,9 @@ interface BitqueryEntity {
 // Default token list for exchange + manual exclusion of broken BEP-20 token(s)
 const blacklist: string[] = [
   // List of default tokens to exclude
-  "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c", // WBNB
-  "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82", // CAKE
-  "0xe9e7cea3dedca5984780bafc599bd69add087d56", // BUSD
-  "0x55d398326f99059fF775485246999027B3197955", // USDT
-  "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c", // BTCB
-  "0x2170ed0880ac9a755fd29b2688956bd959f933f8", // ETH
-  "0xc9849e6fdb743d08faee3e34dd2d1bc69ea11a51", // BUNNY
-  "0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63", // XVS
-  "0x8076c74c5e3f5852037f31ff0093eeb8c8add8d3", // SAFEMOON
-  "0x8f0528ce5ef7b51152a59745befdd91d97091d2f", // ALPACA
-  "0x7083609fce4d1d8dc0c979aab8c869ea2c873402", // DOT
-  "0x4e6415a5727ea08aae4580057187923aec331227", // FINE
-  "0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3", // DAI
-  "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d", // USDC
-  "0x844fa82f1e54824655470970f7004dd90546bb28", // DOP
-
-  // List of broken tokens
-  "0x4269e4090ff9dfc99d8846eb0d42e67f01c3ac8b",
-  "0xe2e7329499e8ddb1f2b04ee4b35a8d7f6881e4ea",
+  "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270", // WMATIC
+  "0xafc9aa5ebd7197662d869f75890f18aafeefb1f5", // JAVA
+  "0x2791bca1f2de4661ed88a30c99a7a9449aa84174", // USDC
 ];
 
 /**
@@ -60,7 +44,7 @@ const getDateRange = (): string[] => {
 };
 
 /**
- * Fetch Top100 Tokens traded on PancakeSwap v2, ordered by trading volume,
+ * Fetch Top100 Tokens traded on JavaSwap v2, ordered by trading volume,
  * for the past 30 days, filtered to remove default / broken tokens.
  *
  * @returns BitqueryEntity[]]
@@ -76,7 +60,7 @@ const getTokens = async (): Promise<BitqueryEntity[]> => {
           ethereum(network: bsc) {
             dexTrades(
               options: { desc: "Total_USD", limit: 100 }
-              exchangeName: { is: "Pancake v2" }
+              exchangeName: { is: "Java v2" }
               baseCurrency: { notIn: $blacklist }
               date: { since: $from, till: $till }
             ) {
@@ -113,7 +97,7 @@ const getTokens = async (): Promise<BitqueryEntity[]> => {
 const getTokenLogo = (address: string): string => {
   // Note: fs.existsSync can't be used here because its not case sensetive
   if (logoFiles.includes(`${address}.png`)) {
-    return `https://tokens.pancakeswap.finance/images/${address}.png`;
+    return `https://tokens.javaswap.io/images/${address}.png`;
   }
 
   return `https://assets.trustwalletapp.com/blockchains/smartchain/assets/${address}/logo.png`;
@@ -147,7 +131,7 @@ const main = async (): Promise<void> => {
       return [...list, updatedToken];
     }, []);
 
-    const tokenListPath = `${path.resolve()}/src/tokens/pancakeswap-top-100.json`;
+    const tokenListPath = `${path.resolve()}/src/tokens/javaswap-top-100.json`;
     console.info("Saving updated list to ", tokenListPath);
     const stringifiedList = JSON.stringify(sanitizedTokens, null, 2);
     fs.writeFileSync(tokenListPath, stringifiedList);

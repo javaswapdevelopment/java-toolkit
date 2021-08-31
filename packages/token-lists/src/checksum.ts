@@ -1,16 +1,16 @@
 import fs from "fs";
 import path from "path";
 import { getAddress } from "@ethersproject/address";
-import pancakeswapDefault from "./tokens/pancakeswap-default.json";
-import pancakeswapExtended from "./tokens/pancakeswap-extended.json";
-import pancakeswapTop100 from "./tokens/pancakeswap-top-100.json";
-import pancakeswapTop15 from "./tokens/pancakeswap-top-15.json";
+import javaswapDefault from "./tokens/javaswap-default.json";
+import javaswapExtended from "./tokens/javaswap-extended.json";
+import javaswapTop100 from "./tokens/javaswap-top-100.json";
+import javaswapTop15 from "./tokens/javaswap-top-15.json";
 
 const lists = {
-  "pancakeswap-default": pancakeswapDefault,
-  "pancakeswap-extended": pancakeswapExtended,
-  "pancakeswap-top-100": pancakeswapTop100,
-  "pancakeswap-top-15": pancakeswapTop15
+  "javaswap-default": javaswapDefault,
+  "javaswap-extended": javaswapExtended,
+  "javaswap-top-100": javaswapTop100,
+  "javaswap-top-15": javaswapTop15
 };
 
 const checksumAddresses = (listName: string): void => {

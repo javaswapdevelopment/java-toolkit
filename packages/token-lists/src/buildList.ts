@@ -1,14 +1,14 @@
 import fs from "fs";
 import path from "path";
 import { TokenList } from "@uniswap/token-lists";
-import { version as pancakeswapDefaultVersion } from "../lists/pancakeswap-default.json";
-import { version as pancakeswapExtendedVersion } from "../lists/pancakeswap-extended.json";
-import { version as pancakeswapTop15Version } from "../lists/pancakeswap-top-15.json";
-import { version as pancakeswapTop100Version } from "../lists/pancakeswap-top-100.json";
-import pancakeswapDefault from "./tokens/pancakeswap-default.json";
-import pancakeswapExtended from "./tokens/pancakeswap-extended.json";
-import pancakeswapTop100 from "./tokens/pancakeswap-top-100.json";
-import pancakeswapTop15 from "./tokens/pancakeswap-top-15.json";
+import { version as javaswapDefaultVersion } from "../lists/javaswap-default.json";
+import { version as javaswapExtendedVersion } from "../lists/javaswap-extended.json";
+import { version as javaswapTop15Version } from "../lists/javaswap-top-15.json";
+import { version as javaswapTop100Version } from "../lists/javaswap-top-100.json";
+import javaswapDefault from "./tokens/javaswap-default.json";
+import javaswapExtended from "./tokens/javaswap-extended.json";
+import javaswapTop100 from "./tokens/javaswap-top-100.json";
+import javaswapTop15 from "./tokens/javaswap-top-15.json";
 
 export enum VersionBump {
   "major" = "major",
@@ -23,41 +23,41 @@ type Version = {
 };
 
 const lists = {
-  "pancakeswap-default": {
-    list: pancakeswapDefault,
-    name: "PancakeSwap Default",
-    keywords: ["pancakeswap", "default"],
+  "javaswap-default": {
+    list: javaswapDefault,
+    name: "JavaSwap Default",
+    keywords: ["javaswap", "default"],
     logoURI:
-      "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png",
+      "https://tokens.javaswap.io/images/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270.png",
     sort: false,
-    currentVersion: pancakeswapDefaultVersion,
+    currentVersion: javaswapDefaultVersion,
   },
-  "pancakeswap-extended": {
-    list: pancakeswapExtended,
-    name: "PancakeSwap Extended",
-    keywords: ["pancakeswap", "extended"],
+  "javaswap-extended": {
+    list: javaswapExtended,
+    name: "JavaSwap Extended",
+    keywords: ["javaswap", "extended"],
     logoURI:
-      "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png",
+      "https://tokens.javaswap.io/images/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270.png",
     sort: true,
-    currentVersion: pancakeswapExtendedVersion,
+    currentVersion: javaswapExtendedVersion,
   },
-  "pancakeswap-top-100": {
-    list: pancakeswapTop100,
-    name: "PancakeSwap Top 100",
-    keywords: ["pancakeswap", "top 100"],
+  "javaswap-top-100": {
+    list: javaswapTop100,
+    name: "JavaSwap Top 100",
+    keywords: ["javaswap", "top 100"],
     logoURI:
-      "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png",
+      "https://tokens.javaswap.io/images/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270.png",
     sort: true,
-    currentVersion: pancakeswapTop100Version,
+    currentVersion: javaswapTop100Version,
   },
-  "pancakeswap-top-15": {
-    list: pancakeswapTop15,
-    name: "PancakeSwap Top 15",
-    keywords: ["pancakeswap", "top 15"],
+  "javaswap-top-15": {
+    list: javaswapTop15,
+    name: "JavaSwap Top 15",
+    keywords: ["javaswap", "top 15"],
     logoURI:
-      "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png",
+      "https://tokens.javaswap.io/images/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270.png",
     sort: true,
-    currentVersion: pancakeswapTop15Version,
+    currentVersion: javaswapTop15Version,
   },
 };
 
@@ -87,9 +87,9 @@ export const buildList = (listName: string, versionBump?: VersionBump): TokenLis
     tokens: sort
       ? list.sort((t1, t2) => {
           if (t1.chainId === t2.chainId) {
-            // CAKE first in extended list
-            if ((t1.symbol === "CAKE") !== (t2.symbol === "CAKE")) {
-              return t1.symbol === "CAKE" ? -1 : 1;
+            // JAVA first in extended list
+            if ((t1.symbol === "JAVA") !== (t2.symbol === "JAVA")) {
+              return t1.symbol === "JAVA" ? -1 : 1;
             }
             return t1.symbol.toLowerCase() < t2.symbol.toLowerCase() ? -1 : 1;
           }

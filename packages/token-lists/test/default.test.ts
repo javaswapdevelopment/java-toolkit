@@ -4,17 +4,17 @@ import fs from "fs";
 import path from "path";
 import { getAddress } from "@ethersproject/address";
 import { schema } from "@uniswap/token-lists";
-import currentPancakeswapDefaultList from "../lists/pancakeswap-default.json";
-import currentPancakeswapExtendedtList from "../lists/pancakeswap-extended.json";
-import currentPancakeswapTop15List from "../lists/pancakeswap-top-15.json";
-import currentPancakeswapTop100tList from "../lists/pancakeswap-top-100.json";
+import currentJavaswapDefaultList from "../lists/javaswap-default.json";
+import currentJavaswapExtendedtList from "../lists/javaswap-extended.json";
+import currentJavaswapTop15List from "../lists/javaswap-top-15.json";
+import currentJavaswapTop100tList from "../lists/javaswap-top-100.json";
 import { buildList, VersionBump } from "../src/buildList";
 
 const currentLists = {
-  "pancakeswap-default": currentPancakeswapDefaultList,
-  "pancakeswap-extended": currentPancakeswapExtendedtList,
-  "pancakeswap-top-100": currentPancakeswapTop100tList,
-  "pancakeswap-top-15": currentPancakeswapTop15List,
+  "javaswap-default": currentJavaswapDefaultList,
+  "javaswap-extended": currentJavaswapExtendedtList,
+  "javaswap-top-100": currentJavaswapTop100tList,
+  "javaswap-top-15": currentJavaswapTop15List,
 };
 
 const ajv = new Ajv({ allErrors: true, format: "full" });
@@ -84,7 +84,7 @@ expect.extend({
     const hasTWLogo =
       token.logoURI === `https://assets.trustwalletapp.com/blockchains/smartchain/assets/${token.address}/logo.png`;
     let hasLocalLogo = false;
-    const refersToLocalLogo = token.logoURI === `https://tokens.pancakeswap.finance/images/${token.address}.png`;
+    const refersToLocalLogo = token.logoURI === `https://tokens.javaswap.io/images/${token.address}.png`;
     if (refersToLocalLogo) {
       const fileName = token.logoURI.split("/").pop();
       // Note: fs.existsSync can't be used here because its not case sensetive
@@ -103,7 +103,7 @@ expect.extend({
   },
 });
 
-describe.each([["pancakeswap-default"], ["pancakeswap-extended"], ["pancakeswap-top-100"], ["pancakeswap-top-15"]])(
+describe.each([["javaswap-default"], ["javaswap-extended"], ["javaswap-top-100"], ["javaswap-top-15"]])(
   "buildList %s",
   (listName) => {
     const defaultTokenList = buildList(listName);
