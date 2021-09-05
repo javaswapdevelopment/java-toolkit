@@ -1745,7 +1745,7 @@ it("renders correctly", () => {
               >
                 <a
                   class="c28"
-                  href="https://exchange.javaswap.io/#/swap?outputCurrency=0xafc9aa5ebd7197662d869f75890f18aafeefb1f5"
+                  href="https://exchange.javaswap.io/#/swap?outputCurrency=0xAFC9AA5ebd7197662D869F75890F18AafEEFb1f5"
                   target="_blank"
                 >
                   <svg

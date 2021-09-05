@@ -5,8 +5,8 @@ const tokens = {
   java: {
     symbol: "JAVA",
     address: {
-      137: "0xafc9aa5ebd7197662d869f75890f18aafeefb1f5",
-      80001: "0xafc9aa5ebd7197662d869f75890f18aafeefb1f5",
+      137: "0xAFC9AA5ebd7197662D869F75890F18AafEEFb1f5",
+      80001: "0xAFC9AA5ebd7197662D869F75890F18AafEEFb1f5",
     },
     decimals: 18,
     projectLink: "https://javaswap.io/",
@@ -14,8 +14,8 @@ const tokens = {
   wmatic: {
     symbol: "wMATIC",
     address: {
-      137: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-      80001: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+      137: "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+      80001: "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
     },
     decimals: 18,
     projectLink: "https://javaswap.io/",
@@ -23,8 +23,8 @@ const tokens = {
   usdc: {
     symbol: "USDC",
     address: {
-      137: "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-      80001: "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      137: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+      80001: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
     },
     decimals: 18,
     projectLink: "https://www.centre.io/",

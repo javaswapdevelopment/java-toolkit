@@ -28,7 +28,7 @@ const lists = {
     name: "JavaSwap Default",
     keywords: ["javaswap", "default"],
     logoURI:
-      "https://tokens.javaswap.io/images/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270.png",
+      "https://tokens.javaswap.io/images/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270.png",
     sort: false,
     currentVersion: javaswapDefaultVersion,
   },
@@ -37,7 +37,7 @@ const lists = {
     name: "JavaSwap Extended",
     keywords: ["javaswap", "extended"],
     logoURI:
-      "https://tokens.javaswap.io/images/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270.png",
+      "https://tokens.javaswap.io/images/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270.png",
     sort: true,
     currentVersion: javaswapExtendedVersion,
   },
@@ -46,7 +46,7 @@ const lists = {
     name: "JavaSwap Top 100",
     keywords: ["javaswap", "top 100"],
     logoURI:
-      "https://tokens.javaswap.io/images/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270.png",
+      "https://tokens.javaswap.io/images/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270.png",
     sort: true,
     currentVersion: javaswapTop100Version,
   },
@@ -55,7 +55,7 @@ const lists = {
     name: "JavaSwap Top 15",
     keywords: ["javaswap", "top 15"],
     logoURI:
-      "https://tokens.javaswap.io/images/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270.png",
+      "https://tokens.javaswap.io/images/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270.png",
     sort: true,
     currentVersion: javaswapTop15Version,
   },

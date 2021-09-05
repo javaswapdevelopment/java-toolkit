@@ -6,7 +6,6 @@ This repository is a monorepo manage with [yarn workspaces](https://classic.yarn
 
 - [java-uikit](https://github.com/javaswapdevelopment/java-toolkit/tree/master/packages/java-uikit) : React components used to build the Java UI
 - [eslint-config-java](https://github.com/javaswapdevelopment/java-toolkit/tree/master/packages/eslint-config-java) : An ESLint config for java, with Typescript and Prettier support
-- [java-profile-sdk](https://github.com/javaswapdevelopment/java-toolkit/tree/master/packages/java-profile-sdk) : Handy functions to retrieve data for Javaswap Profile system
 - [token-lists](https://github.com/javaswapdevelopment/java-toolkit/tree/master/packages/token-lists) : Main JavaSwap token list and tools to validate it
 
 ## How to use

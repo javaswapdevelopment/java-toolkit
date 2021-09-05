@@ -6,7 +6,7 @@
     "minor": 0,
     "patch": 0
   },
-  "logoURI": "https://tokens.javaswap.io/images/0xafc9aa5ebd7197662d869f75890f18aafeefb1f5.png",
+  "logoURI": "https://tokens.javaswap.io/images/0xAFC9AA5ebd7197662D869F75890F18AafEEFb1f5.png",
   "keywords": [
     "javaswap",
     "top 100"
@@ -15,26 +15,26 @@
     {
       "name": "WMATIC Token",
       "symbol": "WMATIC",
-      "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-      "chainId": 56,
+      "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+      "chainId": 137,
       "decimals": 18,
-      "logoURI": "https://tokens.javaswap.io/images/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270.png"
+      "logoURI": "https://tokens.javaswap.io/images/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270.png"
     },
     {
       "name": "JavaSwap Token",
       "symbol": "JAVA",
-      "address": "0xafc9aa5ebd7197662d869f75890f18aafeefb1f5",
-      "chainId": 56,
+      "address": "0xAFC9AA5ebd7197662D869F75890F18AafEEFb1f5",
+      "chainId": 137,
       "decimals": 18,
-      "logoURI": "https://tokens.javaswap.io/images/0xafc9aa5ebd7197662d869f75890f18aafeefb1f5.png"
+      "logoURI": "https://tokens.javaswap.io/images/0xAFC9AA5ebd7197662D869F75890F18AafEEFb1f5.png"
     },
     {
       "name": "USD Coin",
       "symbol": "USDC",
-      "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-      "chainId": 56,
+      "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+      "chainId": 137,
       "decimals": 18,
-      "logoURI": "https://tokens.javaswap.io/images/0x2791bca1f2de4661ed88a30c99a7a9449aa84174.png"
+      "logoURI": "https://tokens.javaswap.io/images/0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174.png"
     }
   ]
 }
