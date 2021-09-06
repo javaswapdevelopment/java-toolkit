@@ -22,11 +22,11 @@ export const Default: React.FC = () => {
           component={<EllipsisIcon height="16px" width="16px" />}
           options={{ placement: "right", offset: [0, 15], padding: { top: 20 } }}
         >
-          <SubMenuItem as={LinkExternal} href="https://Polygonscan.com" bold={false} color="text">
-            View on Polygonscan
+          <SubMenuItem as={LinkExternal} href="https://bscscan.com" bold={false} color="text">
+            View on BSCScan
           </SubMenuItem>
           <SubMenuItem as={LinkExternal} href="https://javaswap.info" bold={false} color="text" target="blank">
-            View on JAVA Info
+            View on PCS Info
           </SubMenuItem>
           <SubMenuItem as={Link} to="/profile">
             Go to profile page
@@ -43,11 +43,11 @@ export const Default: React.FC = () => {
             </Text>
           }
         >
-          <SubMenuItem as={LinkExternal} href="https://Polygonscan.com" bold={false} color="text">
-            View on Polygonscan
+          <SubMenuItem as={LinkExternal} href="https://bscscan.com" bold={false} color="text">
+            View on BSCScan
           </SubMenuItem>
           <SubMenuItem as={LinkExternal} href="https://javaswap.info" bold={false} color="text" target="blank">
-            View on JAVA Info
+            View on PCS Info
           </SubMenuItem>
           <SubMenuItem as={Link} to="/profile">
             Go to profile page

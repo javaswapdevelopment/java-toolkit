@@ -90,7 +90,7 @@ export const UnitDisplay: React.FC = () => {
           value={javaValue}
           currencyValue="2854.66 BADGER-HOTCROSS LP"
           placeholder="0.0"
-          unit="JAVA-MATIC LP"
+          unit="JAVA-BNB LP"
         />
       </Box>
     </>

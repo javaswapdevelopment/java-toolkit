@@ -40,7 +40,7 @@ it("renders correctly", () => {
     }
 
     .c3 {
-      background-color: #FFF0EB;
+      background-color: #eeeaf4;
       border: 0;
       border-radius: 16px;
       box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
@@ -82,7 +82,7 @@ it("renders correctly", () => {
     }
 
     .c0 {
-      background-color: #FFF0EB;
+      background-color: #eeeaf4;
       border: 1px solid #d7caec;
       border-radius: 16px;
       box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
@@ -200,7 +200,7 @@ it("renders correctly with unit prop", () => {
     }
 
     .c3 {
-      background-color: #FFF0EB;
+      background-color: #eeeaf4;
       border: 0;
       border-radius: 16px;
       box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
@@ -249,7 +249,7 @@ it("renders correctly with unit prop", () => {
     }
 
     .c0 {
-      background-color: #FFF0EB;
+      background-color: #eeeaf4;
       border: 1px solid #d7caec;
       border-radius: 16px;
       box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
@@ -393,7 +393,7 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
     }
 
     .c3 {
-      background-color: #FFF0EB;
+      background-color: #eeeaf4;
       border: 0;
       border-radius: 16px;
       box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
@@ -508,7 +508,7 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
     }
 
     .c0 {
-      background-color: #FFF0EB;
+      background-color: #eeeaf4;
       border: 1px solid #d7caec;
       border-radius: 16px;
       box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);

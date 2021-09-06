@@ -1,7 +1,7 @@
 /**
  * @see https://github.com/javaswapdevelopment/java-frontend/blob/develop/src/config/constants/tokens.ts
  */
-const tokens = {
+ const tokens = {
   java: {
     symbol: "JAVA",
     address: {
@@ -27,7 +27,7 @@ const tokens = {
       80001: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
     },
     decimals: 18,
-    projectLink: "https://www.centre.io/",
+    projectLink: "https://www.circle.com/en/usdc",
   },
 };
 

@@ -11,7 +11,7 @@ export { default as AutoRenewIcon } from "./Icons/AutoRenew";
 export { default as BinanceIcon } from "./Icons/Binance";
 export { default as BinanceChainIcon } from "./Icons/BinanceChain";
 export { default as BlockIcon } from "./Icons/Block";
-export { default as MaticUsdtPairTokenIcon } from "./Icons/MaticUsdtPairToken";
+export { default as MaticUsdcPairTokenIcon } from "./Icons/MaticUsdcPairToken";
 export { default as BunnyCardsIcon } from "./Icons/BunnyCards";
 export { default as BunnyPlaceholderIcon } from "./Icons/BunnyPlaceholder";
 export { default as Cards } from "./Icons/Cards";

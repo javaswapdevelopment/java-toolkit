@@ -27,11 +27,11 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://exchange.javaswap.io",
+        href: "https://exchange.javaswap.finance",
       },
       {
         label: "Liquidity",
-        href: "https://exchange.javaswap.io/#/pool",
+        href: "https://exchange.javaswap.finance/#/pool",
       },
     ],
   },
@@ -121,7 +121,7 @@ export const links = [
     items: [
       {
         label: "Voting",
-        href: "https://voting.javaswap.io",
+        href: "https://voting.javaswap.finance",
       },
       {
         label: "Github",
@@ -129,7 +129,7 @@ export const links = [
       },
       {
         label: "Docs",
-        href: "https://docs.javaswap.io",
+        href: "https://docs.javaswap.finance",
       },
       {
         label: "Blog",

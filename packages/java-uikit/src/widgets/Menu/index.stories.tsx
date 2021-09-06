@@ -50,7 +50,7 @@ const UserMenuComponent: React.FC<{ variant?: Variant; text?: string; account?: 
     <UserMenuItem as={Link} to="/profile">
       React Router Link
     </UserMenuItem>
-    <UserMenuItem as="a" href="https://javaswap.io" target="_blank">
+    <UserMenuItem as="a" href="https://javaswap.finance" target="_blank">
       Link
     </UserMenuItem>
     <UserMenuDivider />
