@@ -22,6 +22,11 @@ export const links = [
     href: "/",
   },
   {
+    label: "Presale",
+    icon: "PresaleIcon",
+    href: "https://presale.javaswap.io/",
+  },
+  {
     label: "Swap",
     icon: "TradeIcon",
     items: [

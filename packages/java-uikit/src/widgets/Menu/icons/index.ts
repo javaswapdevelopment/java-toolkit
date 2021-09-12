@@ -20,6 +20,8 @@ export { default as MoreIcon } from "./More";
 export { default as NftIcon } from "./Nft";
 export { default as PoolIcon } from "./Pool";
 export { default as PredictionsIcon } from "./Predictions";
+
+export { default as PresaleIcon } from "./Presale";
 export { default as ReferralIcon } from "./Referral";
 export { default as SunIcon } from "./Sun";
 export { default as TeamBattleIcon } from "./TeamBattle";
