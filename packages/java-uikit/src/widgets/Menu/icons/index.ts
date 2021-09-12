@@ -14,6 +14,7 @@ export { default as JavaBidIcon } from "./JavaBid";
 
 export { default as LogoIcon } from "./Logo";
 export { default as LottoIcon } from "./Lotto";
+export { default as MediumIcon } from "./Medium";
 export { default as MoonIcon } from "./Moon";
 export { default as MoreIcon } from "./More";
 export { default as NftIcon } from "./Nft";

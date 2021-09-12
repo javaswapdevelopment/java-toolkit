@@ -655,7 +655,7 @@ it("renders ConnectModal correctly", () => {
             </p>
             <a
               class="c22"
-              href="https://docs.javaswap.finance/get-started/connection-guide"
+              href="https://docs.javaswap.io/get-started/connection-guide"
               rel="noreferrer noopener"
               scale="md"
               target="_blank"

@@ -1202,7 +1202,7 @@ it("renders correctly", () => {
                     class="c17"
                   >
                     <a
-                      href="https://exchange.javaswap.finance"
+                      href="https://exchange.javaswap.io"
                       role="button"
                     >
                       <div
@@ -1216,7 +1216,7 @@ it("renders correctly", () => {
                     class="c17"
                   >
                     <a
-                      href="https://exchange.javaswap.finance/#/pool"
+                      href="https://exchange.javaswap.io/#/pool"
                       role="button"
                     >
                       <div
@@ -1518,7 +1518,7 @@ it("renders correctly", () => {
                     class="c17"
                   >
                     <a
-                      href="https://javaswap.info"
+                      href="https://javaswap.io"
                       role="button"
                     >
                       <div
@@ -1532,7 +1532,7 @@ it("renders correctly", () => {
                     class="c17"
                   >
                     <a
-                      href="https://javaswap.info/tokens"
+                      href="https://javaswap.io/tokens"
                       role="button"
                     >
                       <div
@@ -1546,7 +1546,7 @@ it("renders correctly", () => {
                     class="c17"
                   >
                     <a
-                      href="https://javaswap.info/pairs"
+                      href="https://javaswap.io/pairs"
                       role="button"
                     >
                       <div
@@ -1560,7 +1560,7 @@ it("renders correctly", () => {
                     class="c17"
                   >
                     <a
-                      href="https://javaswap.info/accounts"
+                      href="https://javaswap.io/accounts"
                       role="button"
                     >
                       <div
@@ -1682,7 +1682,7 @@ it("renders correctly", () => {
                     class="c17"
                   >
                     <a
-                      href="https://voting.javaswap.finance"
+                      href="https://voting.javaswap.io"
                       role="button"
                     >
                       <div
@@ -1710,7 +1710,7 @@ it("renders correctly", () => {
                     class="c17"
                   >
                     <a
-                      href="https://docs.javaswap.finance"
+                      href="https://docs.javaswap.io"
                       role="button"
                     >
                       <div
@@ -1745,7 +1745,7 @@ it("renders correctly", () => {
               >
                 <a
                   class="c28"
-                  href="https://javaswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
+                  href="https://javaswap.io/swap?outputCurrency=0xAFC9AA5ebd7197662D869F75890F18AafEEFb1f5"
                   target="_blank"
                 >
                   <svg

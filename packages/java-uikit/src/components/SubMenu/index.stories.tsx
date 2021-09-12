@@ -25,7 +25,7 @@ export const Default: React.FC = () => {
           <SubMenuItem as={LinkExternal} href="https://bscscan.com" bold={false} color="text">
             View on BSCScan
           </SubMenuItem>
-          <SubMenuItem as={LinkExternal} href="https://javaswap.info" bold={false} color="text" target="blank">
+          <SubMenuItem as={LinkExternal} href="https://javaswap.io" bold={false} color="text" target="blank">
             View on PCS Info
           </SubMenuItem>
           <SubMenuItem as={Link} to="/profile">
@@ -46,7 +46,7 @@ export const Default: React.FC = () => {
           <SubMenuItem as={LinkExternal} href="https://bscscan.com" bold={false} color="text">
             View on BSCScan
           </SubMenuItem>
-          <SubMenuItem as={LinkExternal} href="https://javaswap.info" bold={false} color="text" target="blank">
+          <SubMenuItem as={LinkExternal} href="https://javaswap.io" bold={false} color="text" target="blank">
             View on PCS Info
           </SubMenuItem>
           <SubMenuItem as={Link} to="/profile">

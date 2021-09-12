@@ -8,8 +8,9 @@ import JavaPrice from "./JavaPrice";
 import ThemeSwitcher from "./ThemeSwitcher";
 import SocialLinks from "./SocialLinks";
 import LangSelector from "./LangSelector";
+import { Flex, Text } from "../../..";
 
-interface Props extends PanelProps, PushedProps {}
+interface Props extends PanelProps, PushedProps { }
 
 const Container = styled.div`
   flex: none;
@@ -56,8 +57,11 @@ const PanelFooter: React.FC<Props> = ({
 
   return (
     <Container>
+      <JavaPrice javaPriceUsd={javaPriceUsd} />
       <SocialEntry>
-        <JavaPrice javaPriceUsd={javaPriceUsd} />
+        <Flex>
+          <Text color="textSubtle" fontSize="14px" >Find us in media</Text>
+        </Flex>
         <SocialLinks />
       </SocialEntry>
       <SettingsEntry>

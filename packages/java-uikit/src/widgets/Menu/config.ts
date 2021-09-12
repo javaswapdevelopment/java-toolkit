@@ -27,12 +27,12 @@ export const links = [
     items: [
       {
         label: "Trade",
-        href: "https://exchange.javaswap.finance",
+        href: "https://exchange.javaswap.io",
         icon: "TradeIcon"
       },
       {
         label: "Bridge",
-        href: "https://exchange.javaswap.finance/#/pool",
+        href: "https://exchange.javaswap.io/#/pool",
         icon: "BridgeIcon"
       },
     ],
@@ -54,17 +54,17 @@ export const links = [
     items: [
       {
         label: "JavaBid",
-        href: "/ifo",
+        href: "/javabid",
         icon: "JavaBidIcon",
       },
       {
         label: "Lucky Lotto",
-        href: "/ifo/history",
+        href: "/lotto",
         icon: "LottoIcon",
       },
       {
         label: "Flip Coin",
-        href: "/ifo/history",
+        href: "/flip",
         icon: "FlipIcon",
       },
     ],
@@ -100,7 +100,7 @@ export const links = [
     items: [
       {
         label: "Voting",
-        href: "https://voting.javaswap.finance",
+        href: "https://voting.javaswap.io",
       },
       {
         label: "Github",
@@ -108,7 +108,7 @@ export const links = [
       },
       {
         label: "Docs",
-        href: "https://docs.javaswap.finance",
+        href: "https://docs.javaswap.io",
       },
       {
         label: "Blog",
@@ -125,62 +125,19 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/javaswap",
-      },
-      {
-        label: "Bahasa Indonesia",
-        href: "https://t.me/JavaSwapIndonesia",
-      },
-      {
-        label: "中文",
-        href: "https://t.me/JavaSwap_CN",
-      },
-      {
-        label: "Tiếng Việt",
-        href: "https://t.me/JavaSwapVN",
-      },
-      {
-        label: "Italiano",
-        href: "https://t.me/javaswap_ita",
-      },
-      {
-        label: "русский",
-        href: "https://t.me/javaswap_ru",
-      },
-      {
-        label: "Türkiye",
-        href: "https://t.me/javaswapturkiye",
-      },
-      {
-        label: "Português",
-        href: "https://t.me/JavaSwapPortuguese",
-      },
-      {
-        label: "Español",
-        href: "https://t.me/JavaswapEs",
-      },
-      {
-        label: "日本語",
-        href: "https://t.me/javaswapjp",
-      },
-      {
-        label: "Français",
-        href: "https://t.me/javaswapfr",
-      },
-      {
-        label: "Announcements",
-        href: "https://t.me/JavaSwapAnn",
-      },
-      {
-        label: "Whale Alert",
-        href: "https://t.me/JavaSwapWhales",
+        href: "https://t.me/JavaSwap_Official",
       },
     ],
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/javaswap",
+    href: "https://twitter.com/Javaswap_",
+  },
+  {
+    label: "Medium",
+    icon: "MediumIcon",
+    href: "https://medium.com/@javaswapmarketing",
   },
 ];
 
