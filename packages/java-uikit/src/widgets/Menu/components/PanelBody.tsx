@@ -6,7 +6,7 @@ import * as IconModule from "../icons";
 import Accordion from "./Accordion";
 import { MenuEntry, LinkLabel, LinkStatus } from "./MenuEntry";
 import MenuLink from "./MenuLink";
-import { PanelProps, PushedProps } from "../types";
+import { MenuSubEntry, PanelProps, PushedProps } from "../types";
 
 interface Props extends PanelProps, PushedProps {
   isMobile: boolean;
@@ -21,6 +21,15 @@ const Container = styled.div`
   overflow-x: hidden;
   height: 100%;
 `;
+
+const IconSub = function (child: MenuSubEntry) {
+  const IconSub = Icons[!child.icon ? "entry.icon" : child.icon];
+
+  return (
+    <IconSub width="24px" mr="8px" />
+  )
+}
+
 
 const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
   const location = useLocation();
@@ -54,8 +63,13 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
               {isPushed &&
                 entry.items.map((item) => (
                   <MenuEntry key={item.href} secondary isActive={item.href === location.pathname} onClick={handleClick}>
+                    {
+                        item.icon && (
+                          IconSub(item)
+                        )
+                      }
                     <MenuLink href={item.href}>
-                      <LinkLabel isPushed={isPushed}>{item.label}</LinkLabel>
+                      <LinkLabel isPushed={isPushed}>{item.label} </LinkLabel>
                       {item.status && (
                         <LinkStatus color={item.status.color} fontSize="14px">
                           {item.status.text}

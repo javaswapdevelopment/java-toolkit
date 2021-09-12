@@ -106,7 +106,7 @@ it("renders correctly", () => {
     }
 
     .c1:focus + label {
-      box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
+      box-shadow: 0px 0px 0px 1px #D86D25,0px 0px 0px 4px rgba(118,69,217,0.6);
     }
 
     .c1:checked + label .javas {
@@ -149,7 +149,7 @@ it("renders correctly", () => {
     .c2 {
       width: 56px;
       height: 32px;
-      background: #31D0AA;
+      background: #D8CACA;
       box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
       display: inline-block;
       border-radius: 50px;
@@ -302,7 +302,7 @@ it("renders correctly scale sm", () => {
     }
 
     .c1:focus + label {
-      box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
+      box-shadow: 0px 0px 0px 1px #D86D25,0px 0px 0px 4px rgba(118,69,217,0.6);
     }
 
     .c1:checked + label .javas {
@@ -345,7 +345,7 @@ it("renders correctly scale sm", () => {
     .c2 {
       width: 36px;
       height: 20px;
-      background: #31D0AA;
+      background: #D8CACA;
       box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
       display: inline-block;
       border-radius: 50px;

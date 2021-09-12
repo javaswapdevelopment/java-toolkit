@@ -32,14 +32,14 @@ it("renders ConnectModal correctly", () => {
     }
 
     .c5 {
-      color: #280D5F;
+      color: #9B2244;
       font-size: 16px;
       font-weight: 600;
       line-height: 1.5;
     }
 
     .c18 {
-      color: #280D5F;
+      color: #9B2244;
       font-size: 14px;
       font-weight: 400;
       line-height: 1.5;
@@ -47,7 +47,7 @@ it("renders ConnectModal correctly", () => {
     }
 
     .c21 {
-      color: #7A6EAA;
+      color: #816C73;
       font-size: 16px;
       font-weight: 400;
       line-height: 1.5;
@@ -93,7 +93,7 @@ it("renders ConnectModal correctly", () => {
       height: 48px;
       padding: 0 24px;
       background-color: transparent;
-      color: #1FC7D4;
+      color: #9B2244;
       box-shadow: none;
     }
 
@@ -150,7 +150,7 @@ it("renders ConnectModal correctly", () => {
       height: 48px;
       padding: 0 24px;
       background-color: transparent;
-      color: #1FC7D4;
+      color: #9B2244;
       box-shadow: none;
       width: 100%;
       padding-top: 16px;
@@ -209,7 +209,7 @@ it("renders ConnectModal correctly", () => {
       transition: background-color 0.2s,opacity 0.2s;
       height: 48px;
       padding: 0 24px;
-      background-color: #7A6EAA;
+      background-color: #816C73;
       color: #FFFFFF;
       width: 100%;
     }
@@ -244,7 +244,7 @@ it("renders ConnectModal correctly", () => {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
-      fill: #1FC7D4;
+      fill: #9B2244;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -254,7 +254,7 @@ it("renders ConnectModal correctly", () => {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
-      fill: #280D5F;
+      fill: #9B2244;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -265,7 +265,7 @@ it("renders ConnectModal correctly", () => {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
-      fill: #7A6EAA;
+      fill: #816C73;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;

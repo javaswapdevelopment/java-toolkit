@@ -15,7 +15,7 @@ it("renders correctly", () => {
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c0 {
-      background-color: #EFF4F5;
+      background-color: #FFFFFF;
       border-radius: 16px;
       display: -webkit-inline-box;
       display: -webkit-inline-flex;
@@ -73,7 +73,7 @@ it("renders correctly", () => {
       transition: background-color 0.2s,opacity 0.2s;
       height: 48px;
       padding: 0 24px;
-      background-color: #1FC7D4;
+      background-color: #9B2244;
       color: white;
     }
 
@@ -100,7 +100,7 @@ it("renders correctly", () => {
 
     .c2 {
       background-color: transparent;
-      color: #1FC7D4;
+      color: #9B2244;
     }
 
     .c2:hover:not(:disabled):not(:active) {

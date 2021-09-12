@@ -82,7 +82,7 @@ it("renders correctly", () => {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
-      fill: #7A6EAA;
+      fill: #816C73;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -92,7 +92,7 @@ it("renders correctly", () => {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
-      fill: #280D5F;
+      fill: #9B2244;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -102,7 +102,7 @@ it("renders correctly", () => {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
-      fill: #280D5F;
+      fill: #9B2244;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -113,7 +113,7 @@ it("renders correctly", () => {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
-      fill: #7A6EAA;
+      fill: #816C73;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -134,7 +134,7 @@ it("renders correctly", () => {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
-      fill: #7A6EAA;
+      fill: #816C73;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -173,7 +173,7 @@ it("renders correctly", () => {
       height: 48px;
       padding: 0 24px;
       background-color: transparent;
-      color: #1FC7D4;
+      color: #9B2244;
       box-shadow: none;
       width: sm;
       height: sm;
@@ -233,7 +233,7 @@ it("renders correctly", () => {
       height: 48px;
       padding: 0 24px;
       background-color: transparent;
-      color: #1FC7D4;
+      color: #9B2244;
       box-shadow: none;
     }
 
@@ -290,7 +290,7 @@ it("renders correctly", () => {
       height: 48px;
       padding: 0 24px;
       background-color: transparent;
-      color: #1FC7D4;
+      color: #9B2244;
       box-shadow: none;
       width: sm;
       height: sm;
@@ -318,7 +318,7 @@ it("renders correctly", () => {
     }
 
     .c4 {
-      color: #280D5F;
+      color: #9B2244;
       padding: 0 8px;
       border-radius: 8px;
     }
@@ -378,7 +378,7 @@ it("renders correctly", () => {
     }
 
     .c23 {
-      color: #31D0AA;
+      color: #D8CACA;
       font-size: 14px;
       font-weight: 400;
       line-height: 1.5;
@@ -386,14 +386,14 @@ it("renders correctly", () => {
     }
 
     .c29 {
-      color: #7A6EAA;
+      color: #816C73;
       font-size: 16px;
       font-weight: 600;
       line-height: 1.5;
     }
 
     .c35 {
-      color: #1FC7D4;
+      color: #9B2244;
       font-size: 16px;
       font-weight: 600;
       line-height: 1.5;
@@ -410,14 +410,14 @@ it("renders correctly", () => {
     }
 
     .c42 {
-      color: #7A6EAA;
+      color: #816C73;
       font-size: 16px;
       font-weight: 400;
       line-height: 1.5;
     }
 
     .c13 {
-      color: #7A6EAA;
+      color: #816C73;
       -webkit-transition: color 0.4s;
       transition: color 0.4s;
       -webkit-box-flex: 1;
@@ -440,8 +440,8 @@ it("renders correctly", () => {
       padding: 0 16px;
       font-size: 16px;
       background-color: transparent;
-      color: #7A6EAA;
-      box-shadow: inset 4px 0px 0px #1FC7D4;
+      color: #816C73;
+      box-shadow: inset 4px 0px 0px #9B2244;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -461,11 +461,11 @@ it("renders correctly", () => {
     }
 
     .c11 svg {
-      fill: #7A6EAA;
+      fill: #816C73;
     }
 
     .c11:hover {
-      background-color: #EFF4F5;
+      background-color: #FFFFFF;
     }
 
     .c11.rainbow {
@@ -490,7 +490,7 @@ it("renders correctly", () => {
       padding: 0 16px;
       font-size: 16px;
       background-color: transparent;
-      color: #7A6EAA;
+      color: #816C73;
       box-shadow: none;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -511,11 +511,11 @@ it("renders correctly", () => {
     }
 
     .c15 svg {
-      fill: #7A6EAA;
+      fill: #816C73;
     }
 
     .c15:hover {
-      background-color: #EFF4F5;
+      background-color: #FFFFFF;
     }
 
     .c15.rainbow {
@@ -540,7 +540,7 @@ it("renders correctly", () => {
       padding: 0 32px;
       font-size: 14px;
       background-color: #FAF9FA;
-      color: #7A6EAA;
+      color: #816C73;
       box-shadow: none;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -561,11 +561,11 @@ it("renders correctly", () => {
     }
 
     .c17 svg {
-      fill: #7A6EAA;
+      fill: #816C73;
     }
 
     .c17:hover {
-      background-color: #EFF4F5;
+      background-color: #FFFFFF;
     }
 
     .c17.rainbow {
@@ -590,8 +590,8 @@ it("renders correctly", () => {
       padding: 0 32px;
       font-size: 14px;
       background-color: #FAF9FA;
-      color: #7A6EAA;
-      box-shadow: inset 4px 0px 0px #1FC7D4;
+      color: #816C73;
+      box-shadow: inset 4px 0px 0px #9B2244;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -611,11 +611,11 @@ it("renders correctly", () => {
     }
 
     .c25 svg {
-      fill: #7A6EAA;
+      fill: #816C73;
     }
 
     .c25:hover {
-      background-color: #EFF4F5;
+      background-color: #FFFFFF;
     }
 
     .c25.rainbow {
@@ -650,9 +650,9 @@ it("renders correctly", () => {
       border-radius: 16px;
       padding: 0 8px;
       border: 2px solid;
-      border-color: #31D0AA;
+      border-color: #D8CACA;
       box-shadow: none;
-      color: #31D0AA;
+      color: #D8CACA;
       margin-left: 8px;
     }
 

@@ -25,6 +25,7 @@ export interface MenuSubEntry {
   label: string;
   href: string;
   calloutClass?: string;
+  icon?: string;
   status?: LinkStatus;
 }
 

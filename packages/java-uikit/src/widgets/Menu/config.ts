@@ -22,16 +22,18 @@ export const links = [
     href: "/",
   },
   {
-    label: "Trade",
+    label: "Swap",
     icon: "TradeIcon",
     items: [
       {
-        label: "Exchange",
+        label: "Trade",
         href: "https://exchange.javaswap.finance",
+        icon: "TradeIcon"
       },
       {
-        label: "Liquidity",
+        label: "Bridge",
         href: "https://exchange.javaswap.finance/#/pool",
+        icon: "BridgeIcon"
       },
     ],
   },
@@ -47,9 +49,30 @@ export const links = [
     href: "/syrup",
   },
   {
-    label: "Lottery",
-    icon: "TicketIcon",
-    href: "/lottery",
+    label: "Games",
+    icon: "GamesIcon",
+    items: [
+      {
+        label: "JavaBid",
+        href: "/ifo",
+        icon: "JavaBidIcon",
+      },
+      {
+        label: "Lucky Lotto",
+        href: "/ifo/history",
+        icon: "LottoIcon",
+      },
+      {
+        label: "Flip Coin",
+        href: "/ifo/history",
+        icon: "FlipIcon",
+      },
+    ],
+  },
+  {
+    label: "Referrals",
+    icon: "ReferralIcon",
+    href: "/referral",
   },
   {
     label: "NFT",
@@ -57,63 +80,19 @@ export const links = [
     href: "/nft",
   },
   {
-    label: "Team Battle",
-    icon: "TeamBattleIcon",
-    href: "/competition",
-    status: status.SOON,
-  },
-  {
-    label: "Profile & Teams",
-    icon: "GroupsIcon",
-    status: status.LIVE,
-    items: [
-      {
-        label: "Leaderboard",
-        href: "/teams",
-        status: status.NEW,
-      },
-      {
-        label: "YourProfile",
-        href: "/",
-      },
-    ],
-    calloutClass: "rainbow",
-  },
-  {
-    label: "Info",
-    icon: "InfoIcon",
-    items: [
-      {
-        label: "Overview",
-        href: "https://javaswap.info",
-      },
-      {
-        label: "Tokens",
-        href: "https://javaswap.info/tokens",
-      },
-      {
-        label: "Pairs",
-        href: "https://javaswap.info/pairs",
-      },
-      {
-        label: "Accounts",
-        href: "https://javaswap.info/accounts",
-      },
-    ],
-  },
-  {
     label: "IFO",
     icon: "IfoIcon",
-    items: [
-      {
-        label: "Next",
-        href: "/ifo",
-      },
-      {
-        label: "History",
-        href: "/ifo/history",
-      },
-    ],
+    href: "/ifo",
+  },
+  {
+    label: "Analytics",
+    icon: "AnalyticIcon",
+    href: "/info",
+  },
+  {
+    label: "Audits",
+    icon: "AuditsIcon",
+    href: "/audits",
   },
   {
     label: "More",

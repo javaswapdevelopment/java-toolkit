@@ -15,7 +15,7 @@ it("renders correctly", () => {
       .c0 {
       background: #E7E3EB;
       border-radius: 24px;
-      color: #280D5F;
+      color: #9B2244;
       overflow: hidden;
       position: relative;
       padding: 1px 1px 3px 1px;

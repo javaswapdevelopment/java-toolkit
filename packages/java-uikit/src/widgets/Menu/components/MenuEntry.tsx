@@ -35,7 +35,9 @@ const MenuEntry = styled.div<Props>`
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
   background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
   color: ${({ theme }) => theme.colors.textSubtle};
-  box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
+  background: ${({ isActive, theme }) => (isActive ? `${theme.colors.gradients.menuBorder}` : "transparent")};
+  background-size: 6px 50px !important;
+  background-repeat: no-repeat;
 
   a {
     display: flex;

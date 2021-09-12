@@ -36,6 +36,8 @@ export type Gradients = {
   violet: string;
   violetAlt: string;
   gold: string;
+  menuBorder: string,
+  buttonGradient: string,
 };
 
 export type Colors = {

@@ -2,11 +2,11 @@ import { Colors } from "./types";
 
 export const baseColors = {
   failure: "#ED4B9E",
-  primary: "#1FC7D4",
+  primary: "#9B2244",
   primaryBright: "#53DEE9",
   primaryDark: "#0098A1",
-  secondary: "#7645D9",
-  success: "#31D0AA",
+  secondary: "#D86D25",
+  success: "#D8CACA",
   warning: "#FFB237",
 };
 
@@ -29,12 +29,12 @@ export const lightColors: Colors = {
   dropdown: "#F6F6F6",
   dropdownDeep: "#EEEEEE",
   invertedContrast: "#FFFFFF",
-  input: "#eeeaf4",
+  input: "#FFF0EB",
   inputSecondary: "#d7caec",
-  tertiary: "#EFF4F5",
-  text: "#280D5F",
+  tertiary: "#FFFFFF",
+  text: "#9B2244",
   textDisabled: "#BDC2C4",
-  textSubtle: "#7A6EAA",
+  textSubtle: "#816C73",
   disabled: "#E9EAEB",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #E5FDFF 0%, #F3EFFF 100%)",
@@ -44,13 +44,15 @@ export const lightColors: Colors = {
     violet: "linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)",
     violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
     gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
+    menuBorder: "linear-gradient(#ffe88d 0%, #ffe88d 1.01%, #f5d485 6.85%, #da9e72 24.63%, #c37261 42.02%, #b14f54 58.61%, #a5364b 74.2%, #9d2745 88.42%, #9b2244 100%)",
+    buttonGradient: "linear-gradient(to right, #ffe88d 0%, #ffe88d 1.01%, #b75b59 69.72%, #9b2244 100%)",
   },
 };
 
 export const darkColors: Colors = {
   ...baseColors,
   ...additionalColors,
-  secondary: "#9A6AFF",
+  secondary: "#D86D25",
   background: "#08060B",
   backgroundDisabled: "#3c3742",
   backgroundAlt: "#27262c",
@@ -75,5 +77,7 @@ export const darkColors: Colors = {
     violet: "linear-gradient(180deg, #6C4999 0%, #6D4DB2 100%)",
     violetAlt: "linear-gradient(180deg, #434575 0%, #66578D 100%)",
     gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
+    menuBorder: "linear-gradient(#ffe88d 0%, #ffe88d 1.01%, #f5d485 6.85%, #da9e72 24.63%, #c37261 42.02%, #b14f54 58.61%, #a5364b 74.2%, #9d2745 88.42%, #9b2244 100%)",
+    buttonGradient: "linear-gradient(to right, #ffe88d 0%, #ffe88d 1.01%, #b75b59 69.72%, #9b2244 100%)",
   },
 };
