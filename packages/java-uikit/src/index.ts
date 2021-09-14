@@ -13,6 +13,7 @@ export * from "./components/Heading";
 export * from "./components/Image";
 export * from "./components/Input";
 export * from "./components/Layouts";
+export * from "./components/LinearStepper";
 export * from "./components/Link";
 export * from "./components/Message";
 export * from "./components/NotificationDot";
