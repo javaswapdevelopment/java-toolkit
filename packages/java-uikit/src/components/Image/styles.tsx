@@ -1,16 +1,17 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { variant as StyledSystemVariant } from "styled-system";
 import { ImageProps, Variant, variants } from "./types";
 import TokenImage from "./TokenImage";
 
 interface StyledImageProps extends ImageProps {
   variant: Variant;
+  farm?: boolean;
 }
 
 export const StyledPrimaryImage = styled(TokenImage)<StyledImageProps>`
   position: absolute;
   width: ${({ variant }) =>
-    variant === variants.DEFAULT ? "92%" : "82%"}; // 92, 82 are arbitrary numbers to fit the variant
+    variant === variants.DEFAULT?"92%":"82%"}; // 92, 82 are arbitrary numbers to fit the variant
 
   ${StyledSystemVariant({
     variants: {
@@ -30,6 +31,15 @@ export const StyledPrimaryImage = styled(TokenImage)<StyledImageProps>`
       },
     },
   })}
+
+  ${({ farm }) => farm && css`
+    bottom: 0 !important; 
+    left: 0 !important;
+    right: 0 !important;
+    top: auto !important;
+    margin: auto !important;
+    width: 50% !important;
+    `}
 `;
 
 export const StyledSecondaryImage = styled(TokenImage)<StyledImageProps>`
@@ -54,4 +64,14 @@ export const StyledSecondaryImage = styled(TokenImage)<StyledImageProps>`
       },
     },
   })}
+
+  ${({ farm }) => farm && css`
+      bottom: 0 !important;
+      left: auto !important;
+      right: 0 !important;
+      top: 0 !important;
+      margin: auto !important;
+      width: "40%" !important;
+      `
+  }
 `;

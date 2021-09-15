@@ -89,6 +89,7 @@ export { default as TicketFillIcon } from "./Icons/TicketFill";
 export { default as TicketRound } from "./Icons/TicketRound";
 export { default as TimerIcon } from "./Icons/Timer";
 export { default as TokenPocketIcon } from "./Icons/TokenPocket";
+export { default as TreeIcon } from "./Icons/Tree";
 export { default as TrophyGoldIcon } from "./Icons/TrophyGold";
 export { default as TrustWalletIcon } from "./Icons/TrustWallet";
 export { default as TuneIcon } from "./Icons/Tune";

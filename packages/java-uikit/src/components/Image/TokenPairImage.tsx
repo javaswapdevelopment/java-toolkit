@@ -2,12 +2,14 @@ import React from "react";
 import { TokenPairImageProps, variants } from "./types";
 import { StyledPrimaryImage, StyledSecondaryImage } from "./styles";
 import Wrapper from "./Wrapper";
+import { TreeIcon } from "../Svg";
 
 const TokenPairImage: React.FC<TokenPairImageProps> = ({
   primarySrc,
   secondarySrc,
   width,
   height,
+  farm,
   variant = variants.DEFAULT,
   primaryImageProps = {},
   secondaryImageProps = {},
@@ -15,18 +17,35 @@ const TokenPairImage: React.FC<TokenPairImageProps> = ({
 }) => {
   const secondaryImageSize = Math.floor(width / 2);
 
-  return (
+  if(farm){
+    return (
     <Wrapper position="relative" width={width} height={height} {...props}>
-      <StyledPrimaryImage variant={variant} src={primarySrc} width={width} height={height} {...primaryImageProps} />
-      <StyledSecondaryImage
+      
+      <StyledPrimaryImage farm variant={variant} src={primarySrc} width={width} height={height} {...primaryImageProps} />
+      <StyledSecondaryImage 
+        farm
         variant={variant}
         src={secondarySrc}
         width={secondaryImageSize}
         height={secondaryImageSize}
         {...secondaryImageProps}
       />
-    </Wrapper>
-  );
+      <TreeIcon width="70%" />
+    </Wrapper>)
+  }else{
+    return (
+      <Wrapper position="relative" width={width} height={height} {...props}>
+        <StyledPrimaryImage variant={variant} src={primarySrc} width={width} height={height} {...primaryImageProps} />
+        <StyledSecondaryImage
+          variant={variant}
+          src={secondarySrc}
+          width={secondaryImageSize}
+          height={secondaryImageSize}
+          {...secondaryImageProps}
+        />
+      </Wrapper>
+    );
+  }
 };
 
 export default TokenPairImage;
