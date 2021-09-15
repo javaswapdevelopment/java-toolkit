@@ -30,7 +30,7 @@ const TokenPairImage: React.FC<TokenPairImageProps> = ({
         height={secondaryImageSize}
         {...secondaryImageProps}
       />
-      <TreeIcon width="70%" />
+      <TreeIcon style={{width:"70%", display:"block", margin:"0 auto"}}    />
     </Wrapper>)
   }else{
     return (

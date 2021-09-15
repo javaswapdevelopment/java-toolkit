@@ -120,6 +120,7 @@ export const TokenPairImages: React.FC = () => {
               height={64}
               width={64}
               title={token.symbol}
+              mb="16px"
             />
             <TokenPairImage
               primarySrc={secondarySrc}
@@ -128,7 +129,7 @@ export const TokenPairImages: React.FC = () => {
               height={64}
               width={64}
               title={token.symbol}
-              mt="16px"
+              mb="16px"
             />
             <TokenPairImage
               variant="inverted"
