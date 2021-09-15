@@ -6,7 +6,8 @@ import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import clsx from 'clsx';
 import { Check } from 'react-feather';
-import { baseColors, lightColors } from '../../theme/colors';
+import { baseColors } from '../../theme/colors';
+import { color } from 'styled-system';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,7 +28,7 @@ const useColorlibStepIconStyles = makeStyles({
     root: {
       backgroundColor: baseColors.primary,
       zIndex: 1,
-      color: '#fff',
+      color: baseColors.primary,
       width: 30,
       height: 30,
       display: 'flex',
@@ -73,7 +74,7 @@ const LinearStepperComponent: React.FC = (prop) => {
       <Stepper className={classes.root} activeStep={4} alternativeLabel>
         {steps.map((label) => (
           <Step key={label}>
-            <StepLabel StepIconComponent={ColorlibStepIcon} >{label}</StepLabel>
+            <StepLabel StepIconComponent={ColorlibStepIcon} ><a style={{color:useTheme().colors.textSubtle}}>{label}</a></StepLabel>
           </Step>
         ))}
       </Stepper>
