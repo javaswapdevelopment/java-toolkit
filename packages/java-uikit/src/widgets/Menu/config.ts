@@ -113,11 +113,11 @@ export const links = [
       },
       {
         label: "Docs",
-        href: "https://docs.javaswap.io",
+        href: "https://javaswapgitbook.gitbook.io/javaswap/",
       },
       {
         label: "Blog",
-        href: "https://javaswap.medium.com",
+        href: "https://javaswapofficial.medium.com/",
       },
     ],
   },
@@ -142,7 +142,7 @@ export const socials = [
   {
     label: "Medium",
     icon: "MediumIcon",
-    href: "https://medium.com/@javaswapmarketing",
+    href: "https://javaswapofficial.medium.com/",
   },
 ];
 

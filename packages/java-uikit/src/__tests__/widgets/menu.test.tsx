@@ -1724,7 +1724,7 @@ it("renders correctly", () => {
                     class="c17"
                   >
                     <a
-                      href="https://javaswap.medium.com"
+                      href="https://javaswapofficial.medium.com/"
                       role="button"
                     >
                       <div
