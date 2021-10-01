@@ -105,6 +105,8 @@ export { default as WalletFilledIcon } from "./Icons/WalletFilled";
 export { default as WaitIcon } from "./Icons/Wait";
 export { default as SubmitIcon } from "./Icons/Submit";
 export { default as HarvestIcon } from "./Icons/Harvets";
+export { default as RocketIcon } from "./Icons/Rocket";
+export { default as SupportIcon } from "./Icons/Support";
 
 export { default as Svg } from "./Svg";
 export type { SvgProps } from "./types";

@@ -113,7 +113,7 @@ export const links = [
       },
       {
         label: "Docs",
-        href: "https://javaswapgitbook.gitbook.io/javaswap/",
+        href: "https://javaswap.gitbook.io/javaswap/",
       },
       {
         label: "Blog",
