@@ -8,6 +8,7 @@ import clsx from 'clsx';
 import { Check } from 'react-feather';
 import { baseColors } from '../../theme/colors';
 import { color } from 'styled-system';
+import { StepperProps } from '.';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -64,9 +65,9 @@ const useColorlibStepIconStyles = makeStyles({
     );
   }
 
-const LinearStepperComponent: React.FC = (prop) => {
+const LinearStepperComponent: React.FC<StepperProps> = ({text1, text2, text3, text4}) => {
   const classes = useStyles();
-  const steps = getSteps();
+  const steps = [text1, text2, text3, text4];
 
 
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
-import { LogoIcon } from "../../../components/Svg";
+import { LogoIcon, SpinnerIcon } from "../../../components/Svg";
 import Flex from "../../../components/Box/Flex";
 import { HamburgerIcon, HamburgerCloseIcon, LogoIcon as LogoWithText } from "../icons";
 import MenuButton from "./MenuButton";
@@ -19,6 +19,7 @@ const blink = keyframes`
 `;
 
 const StyledLink = styled(Link)`
+  
   display: flex;
   align-items: center;
   .mobile-icon {
@@ -26,6 +27,15 @@ const StyledLink = styled(Link)`
     ${({ theme }) => theme.mediaQueries.nav} {
       display: none;
     }
+  }
+  .hover-mobile{
+    position: absolute;
+    left: 60px;
+    width: 58px;
+    display: none;
+  }
+  .hover-desktop{
+    display:none;
   }
   .desktop-icon {
     width: 160px;
@@ -38,13 +48,17 @@ const StyledLink = styled(Link)`
     animation-delay: 20ms;
   }
   &:hover {
-    .left-eye,
-    .right-eye {
-      transform-origin: center 60%;
-      animation-name: ${blink};
-      animation-duration: 350ms;
-      animation-iteration-count: 1;
+    .hover-mobile{
+      display:inline;
+      ${({ theme }) => theme.mediaQueries.nav} {
+        display: none;
+      }
     }
+
+    .mobile-icon {
+      display:none;
+    }
+
   }
 `;
 
@@ -52,6 +66,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <>
+      <SpinnerIcon className="hover-mobile" />
       <LogoIcon className="mobile-icon" />
       <LogoWithText className="desktop-icon" isDark={isDark} />
     </>

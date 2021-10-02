@@ -30,6 +30,13 @@ const langs: Language[] = [...Array(20)].map((_, i) => ({
   locale: `Locale${i}`,
 }));
 
+const eventAlert: React.FC = () => {
+  return (
+    <Text color="primary">JavaSwap Event Tomorrow</Text>
+  );
+};
+
+
 const UserMenuComponent: React.FC<{ variant?: Variant; text?: string; account?: string }> = ({
   variant = variants.DEFAULT,
   text,
@@ -134,7 +141,7 @@ export const Connected: React.FC = () => {
   const props = useProps();
   return (
     <BrowserRouter>
-      <Menu {...props}>
+      <Menu {...props} alert={eventAlert(null)}>
         <div>
           <Heading as="h1" mb="8px">
             Page body
@@ -161,7 +168,7 @@ export const Connected: React.FC = () => {
 export const NotConnected: React.FC = () => {
   return (
     <BrowserRouter>
-      <Menu isDark={false} toggleTheme={noop} langs={langs} setLang={noop} currentLang="EN" links={links}>
+      <Menu isDark={false} toggleTheme={noop} langs={langs} setLang={noop} currentLang="EN" links={links} alert={eventAlert(null)}>
         <div>
           <h1>Page body</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -182,7 +189,7 @@ export const NotConnected: React.FC = () => {
 export const WithoutConnectButton: React.FC = () => {
   return (
     <BrowserRouter>
-      <Menu isDark={false} toggleTheme={noop} langs={langs} setLang={noop} currentLang="EN" links={links}>
+      <Menu isDark={false} toggleTheme={noop} langs={langs} setLang={noop} currentLang="EN" links={links} alert={eventAlert(null)}>
         <div>
           <h1>No connect button on top</h1>
           This variant is needed for info site
@@ -202,6 +209,7 @@ export const MenuEntryComponent: React.FC = () => {
   );
 };
 
+
 export const WithSubmenuSelected: React.FC = () => {
   return (
     <MemoryRouter initialEntries={["/teams"]}>
@@ -213,6 +221,7 @@ export const WithSubmenuSelected: React.FC = () => {
         currentLang="EN"
         javaPriceUsd={0.23158668932877668}
         links={links}
+        alert={eventAlert(null)}
       >
         <div>
           <Heading as="h1" mb="8px">

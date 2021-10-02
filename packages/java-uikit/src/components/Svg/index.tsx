@@ -107,6 +107,7 @@ export { default as SubmitIcon } from "./Icons/Submit";
 export { default as HarvestIcon } from "./Icons/Harvets";
 export { default as RocketIcon } from "./Icons/Rocket";
 export { default as SupportIcon } from "./Icons/Support";
+export { default as SpinnerIcon } from "./Icons/Spinner";
 
 export { default as Svg } from "./Svg";
 export type { SvgProps } from "./types";

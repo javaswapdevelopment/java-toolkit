@@ -70,6 +70,7 @@ const Menu: React.FC<NavProps> = ({
   javaPriceUsd,
   links,
   children,
+  alert,
 }) => {
   const { isMobile, isTablet } = useMatchBreakpoints();
   const isSmallerScreen = isMobile || isTablet;
@@ -118,6 +119,7 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
+        {alert}
         <Flex>
           {globalMenu} {userMenu}
         </Flex>
