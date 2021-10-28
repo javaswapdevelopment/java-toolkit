@@ -8,7 +8,7 @@ const Icon: React.FC<SvgProps> = (props) => {
       <g
         data-name="Grupo 13562"
         fill="none"
-        stroke="#9b2244"
+        stroke={props.theme?.colors.text}
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={1.2}

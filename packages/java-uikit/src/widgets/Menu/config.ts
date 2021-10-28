@@ -85,6 +85,16 @@ export const links = [
     href: "/nft",
   },
   {
+    label: "V1",
+    icon: "JavaSkeletonIcon",
+    href: "/v1",
+  },
+  {
+    label: "V2",
+    icon: "JavaGoldenIcon",
+    href: "/v2",
+  },
+  {
     label: "IFO",
     icon: "IfoIcon",
     href: "/ifo",

@@ -9,7 +9,7 @@ const Icon: React.FC<SvgProps> = (props) => {
         <g
           data-name="Grupo 11285"
           fill="none"
-          stroke="#9b2244"
+          stroke={props.theme?.colors.text}
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={1.2}
@@ -42,8 +42,7 @@ const Icon: React.FC<SvgProps> = (props) => {
           <path
             data-name="Trazado 6552"
             d="M17.598 13.858v-1.672a4.81 4.81 0 01-2.531-.728l.4-1.109a4.4 4.4 0 002.383.712c1.175 0 1.969-.678 1.969-1.622 0-.91-.646-1.473-1.87-1.969-1.688-.662-2.73-1.423-2.73-2.863a2.714 2.714 0 012.5-2.664V.272h1.026v1.6a4.412 4.412 0 012.151.579l-.413 1.092a4.01 4.01 0 00-2.085-.562c-1.275 0-1.754.761-1.754 1.423 0 .86.612 1.29 2.052 1.886 1.7.695 2.565 1.556 2.565 3.029a2.879 2.879 0 01-2.615 2.813v1.721z"
-            fill="#9b2244"
-            stroke="#9b2244"
+            stroke={props.theme?.colors.text}
             strokeMiterlimit={10}
             strokeWidth={0.5}
           />

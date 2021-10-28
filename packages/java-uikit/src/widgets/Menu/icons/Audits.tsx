@@ -6,7 +6,7 @@ const Icon: React.FC<SvgProps> = (props) => {
   return (
     <Svg viewBox="0 0 25.542 27.033" {...props}>
       <g data-name="Grupo 1430">
-        <g data-name="Grupo 1427" fill="#9b2244">
+        <g data-name="Grupo 1427">
           <path data-name="Trazado 814" d="M16.458 13.658h-.01z" />
           <path
             data-name="Trazado 815"
@@ -17,7 +17,7 @@ const Icon: React.FC<SvgProps> = (props) => {
           <g
             data-name="Grupo 1428"
             fill="none"
-            stroke="#9b2244"
+            stroke={props.theme?.colors.text}
             strokeMiterlimit={10}
             strokeWidth={1.2}
             transform="translate(-4509.242 -14269.929)"

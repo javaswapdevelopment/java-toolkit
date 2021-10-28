@@ -9,7 +9,7 @@ const Icon: React.FC<SvgProps> = (props) => {
         data-name="Grupo 11263"
         transform="translate(-2220.851 -7982.885)"
         fill="none"
-        stroke="#9b2244"
+        stroke={props.theme?.colors.text}
         strokeMiterlimit={10}
         strokeWidth={1.2}
       >

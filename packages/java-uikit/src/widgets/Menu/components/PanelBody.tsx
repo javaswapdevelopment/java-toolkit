@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, {useTheme} from "styled-components";
 import { useLocation } from "react-router-dom";
 import { SvgProps } from "../../../components/Svg";
 import * as IconModule from "../icons";
@@ -26,7 +26,7 @@ const IconSub = function (child: MenuSubEntry) {
   const IconSub = Icons[!child.icon ? "entry.icon" : child.icon];
 
   return (
-    <IconSub width="24px" mr="8px" />
+    <IconSub width="24px" mr="8px" theme={useTheme()} />
   )
 }
 
@@ -41,7 +41,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
     <Container>
       {links.map((entry) => {
         const Icon = Icons[entry.icon];
-        const iconElement = <Icon width="24px" mr="8px" />;
+        const iconElement = <Icon width="24px" mr="8px" theme={useTheme()} />;
         const calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
 
         if (entry.items) {
