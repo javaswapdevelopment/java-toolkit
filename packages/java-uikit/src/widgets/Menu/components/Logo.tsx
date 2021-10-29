@@ -33,6 +33,7 @@ const StyledLink = styled(Link)`
     left: 60px;
     width: 58px;
     display: none;
+    top: 3px;
   }
   .hover-desktop{
     display:none;
@@ -47,7 +48,17 @@ const StyledLink = styled(Link)`
   .right-eye {
     animation-delay: 20ms;
   }
+  .container-mobile{
+    display:none;
+    width: 32px;
+  }
   &:hover {
+    .container-mobile{
+      display:inline;
+      ${({ theme }) => theme.mediaQueries.nav} {
+        display: none;
+      }
+    }
     .hover-mobile{
       display:inline;
       ${({ theme }) => theme.mediaQueries.nav} {
@@ -66,7 +77,9 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <>
-      <SpinnerIcon className="hover-mobile" />
+      <div className="container-mobile">
+        <SpinnerIcon className="hover-mobile" />
+      </div>
       <LogoIcon className="mobile-icon" />
       <LogoWithText className="desktop-icon" isDark={isDark} />
     </>
