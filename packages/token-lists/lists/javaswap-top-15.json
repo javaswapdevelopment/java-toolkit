@@ -1,25 +1,17 @@
 {
-  "name": "JavaSwap Default",
-  "timestamp": "2021-08-20T10:38:20.113Z",
+  "name": "JavaSwap Top 15",
+  "timestamp": "2021-10-29T21:57:37.512Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 0
+    "patch": 1
   },
-  "logoURI": "https://tokens.javaswap.io/images/0xAFC9AA5ebd7197662D869F75890F18AafEEFb1f5.png",
+  "logoURI": "https://tokens.javaswap.io/images/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270.png",
   "keywords": [
     "javaswap",
     "top 15"
   ],
   "tokens": [
-    {
-      "name": "WMATIC Token",
-      "symbol": "WMATIC",
-      "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
-      "chainId": 137,
-      "decimals": 6,
-      "logoURI": "https://tokens.javaswap.io/images/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270.png"
-    },
     {
       "name": "JavaSwap Token",
       "symbol": "JAVA",
@@ -29,12 +21,28 @@
       "logoURI": "https://tokens.javaswap.io/images/0xAFC9AA5ebd7197662D869F75890F18AafEEFb1f5.png"
     },
     {
+      "name": "JavaSwap Token V2",
+      "symbol": "JAVA",
+      "address": "0xeB5B7b7f03200bd25aBf9bD68A57F945Ff5b1428",
+      "chainId": 137,
+      "decimals": 18,
+      "logoURI": "https://tokens.javaswap.io/images/0xeB5B7b7f03200bd25aBf9bD68A57F945Ff5b1428.png"
+    },
+    {
       "name": "USD Coin",
       "symbol": "USDC",
       "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
       "chainId": 137,
-      "decimals": 18,
+      "decimals": 6,
       "logoURI": "https://tokens.javaswap.io/images/0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174.png"
+    },
+    {
+      "name": "WMATIC Token",
+      "symbol": "WMATIC",
+      "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+      "chainId": 137,
+      "decimals": 18,
+      "logoURI": "https://tokens.javaswap.io/images/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270.png"
     }
   ]
 }

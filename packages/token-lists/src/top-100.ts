@@ -100,7 +100,7 @@ const getTokenLogo = (address: string): string => {
     return `https://tokens.javaswap.io/images/${address}.png`;
   }
 
-  return `https://assets.trustwalletapp.com/blockchains/smartchain/assets/${address}/logo.png`;
+  return `https://assets.trustwalletapp.com/blockchains/polygon/assets/${address}/logo.png`;
 };
 
 /**
