@@ -5,6 +5,7 @@ import Dropdown from "../../../components/Dropdown/Dropdown";
 import Link from "../../../components/Link/Link";
 import * as IconModule from "../icons";
 import { socials } from "../config";
+import { useTheme } from "styled-components";
 
 const Icons = IconModule as unknown as { [key: string]: React.FC<SvgProps> };
 
@@ -12,7 +13,7 @@ const SocialLinks: React.FC = () => (
     <Flex>
       {socials.map((social, index) => {
         const Icon = Icons[social.icon];
-        const iconProps = { width: "20px", color: "textSubtle", style: { cursor: "pointer" } };
+        const iconProps = { fill:useTheme().colors.textSubtle, width: "20px", style: { cursor: "pointer" } };
         const mr = index < socials.length - 1 ? "10px" : 0;
         if (social.items) {
           return (

@@ -31,3 +31,4 @@ export { default as TradeIcon } from "./Trade";
 export { default as TwitterIcon } from "./Twitter";
 export { default as JavaSkeletonIcon } from "./JavaSkeleton";
 export { default as JavaGoldenIcon } from "./JavaGolden";
+export { default as DiscordIcon } from "./Discord";

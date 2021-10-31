@@ -60,7 +60,7 @@ const PanelFooter: React.FC<Props> = ({
       <JavaPrice javaPriceUsd={javaPriceUsd} />
       <SocialEntry>
         <Flex>
-          <Text color="textSubtle" fontSize="14px" >Find us in media</Text>
+          <Text color="textSubtle" fontSize="14px" >Check out our socials</Text>
         </Flex>
         <SocialLinks />
       </SocialEntry>

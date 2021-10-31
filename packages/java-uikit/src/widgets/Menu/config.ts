@@ -142,6 +142,10 @@ export const socials = [
         label: "English",
         href: "https://t.me/JavaSwap_Official",
       },
+      {
+        label: "Community",
+        href: "https://t.me/JavaSwapOfficialCommunity"
+      }
     ],
   },
   {
@@ -153,6 +157,11 @@ export const socials = [
     label: "Medium",
     icon: "MediumIcon",
     href: "https://javaswapofficial.medium.com/",
+  },
+  {
+    label: "Discord",
+    icon: "DiscordIcon",
+    href: " https://discord.gg/49F8G3VhHp",
   },
 ];
 

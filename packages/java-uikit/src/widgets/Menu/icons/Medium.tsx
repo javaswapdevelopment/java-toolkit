@@ -8,7 +8,6 @@ const Icon: React.FC<SvgProps> = (props) => {
       <g
         data-name="Grupo 13504"
         transform="translate(-4617.662 -5507.236)"
-        fill="#9b2244"
       >
         <circle
           data-name="Elipse 761"
