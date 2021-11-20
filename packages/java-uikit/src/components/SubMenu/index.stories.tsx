@@ -22,8 +22,8 @@ export const Default: React.FC = () => {
           component={<EllipsisIcon height="16px" width="16px" />}
           options={{ placement: "right", offset: [0, 15], padding: { top: 20 } }}
         >
-          <SubMenuItem as={LinkExternal} href="https://bscscan.com" bold={false} color="text">
-            View on BSCScan
+          <SubMenuItem as={LinkExternal} href="https://polygonscan.com" bold={false} color="text">
+            View on PolygonScan
           </SubMenuItem>
           <SubMenuItem as={LinkExternal} href="https://javaswap.io" bold={false} color="text" target="blank">
             View on PCS Info
@@ -43,8 +43,8 @@ export const Default: React.FC = () => {
             </Text>
           }
         >
-          <SubMenuItem as={LinkExternal} href="https://bscscan.com" bold={false} color="text">
-            View on BSCScan
+          <SubMenuItem as={LinkExternal} href="https://polygonscan.com" bold={false} color="text">
+            View on PolygonScan
           </SubMenuItem>
           <SubMenuItem as={LinkExternal} href="https://javaswap.io" bold={false} color="text" target="blank">
             View on PCS Info
