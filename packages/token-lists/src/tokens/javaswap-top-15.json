@@ -16,14 +16,6 @@
     "logoURI": "https://tokens.javaswap.io/images/0x4aFaE971Ac146d4028c3Ed581Eb307A1615E59Fe.png"
   },
   {
-    "name": "JavaSwap Token V2",
-    "symbol": "JAVA",
-    "address": "0xeB5B7b7f03200bd25aBf9bD68A57F945Ff5b1428",
-    "chainId": 137,
-    "decimals": 18,
-    "logoURI": "https://tokens.javaswap.io/images/0xeB5B7b7f03200bd25aBf9bD68A57F945Ff5b1428.png"
-  },
-  {
     "name": "USD Coin",
     "symbol": "USDC",
     "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
