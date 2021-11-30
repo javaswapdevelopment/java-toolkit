@@ -23,10 +23,10 @@
     {
       "name": "JavaSwap Token",
       "symbol": "JAVA",
-      "address": "0xAFC9AA5ebd7197662D869F75890F18AafEEFb1f5",
+      "address": "0x4aFaE971Ac146d4028c3Ed581Eb307A1615E59Fe",
       "chainId": 137,
       "decimals": 18,
-      "logoURI": "https://tokens.javaswap.io/images/0xAFC9AA5ebd7197662D869F75890F18AafEEFb1f5.png"
+      "logoURI": "https://tokens.javaswap.io/images/0x4aFaE971Ac146d4028c3Ed581Eb307A1615E59Fe.png"
     },
     {
       "name": "JavaSwap Token V2",

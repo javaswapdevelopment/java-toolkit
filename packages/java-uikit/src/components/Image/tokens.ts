@@ -5,8 +5,8 @@
   java: {
     symbol: "JAVA",
     address: {
-      137: "0xAFC9AA5ebd7197662D869F75890F18AafEEFb1f5",
-      80001: "0xAFC9AA5ebd7197662D869F75890F18AafEEFb1f5",
+      137: "0x4aFaE971Ac146d4028c3Ed581Eb307A1615E59Fe",
+      80001: "0x4aFaE971Ac146d4028c3Ed581Eb307A1615E59Fe",
     },
     decimals: 18,
     projectLink: "https://javaswap.io/",

@@ -25,7 +25,7 @@ interface BitqueryEntity {
 const blacklist: string[] = [
   // List of default tokens to exclude
   "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270", // WMATIC
-  "0xAFC9AA5ebd7197662D869F75890F18AafEEFb1f5", // JAVA
+  "0x4aFaE971Ac146d4028c3Ed581Eb307A1615E59Fe", // JAVA
   "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174", // USDC
 ];
 

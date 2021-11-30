@@ -25,7 +25,7 @@ const PriceLink = styled.a`
 const JavaPrice: React.FC<Props> = ({ javaPriceUsd }) => {
   return javaPriceUsd ? (
     <PriceLink
-      href="https://javaswap.io/swap?outputCurrency=0xAFC9AA5ebd7197662D869F75890F18AafEEFb1f5"
+      href="https://javaswap.io/swap?outputCurrency=0x4aFaE971Ac146d4028c3Ed581Eb307A1615E59Fe"
       target="_blank"
     >
       <JavaRoundIcon width="50px" mr="8px" />
