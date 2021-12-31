@@ -26,7 +26,7 @@ export const Default: React.FC = () => {
             View on PolygonScan
           </SubMenuItem>
           <SubMenuItem as={LinkExternal} href="https://javaswap.io" bold={false} color="text" target="blank">
-            View on PCS Info
+            View on JAVA Info
           </SubMenuItem>
           <SubMenuItem as={Link} to="/profile">
             Go to profile page
@@ -47,7 +47,7 @@ export const Default: React.FC = () => {
             View on PolygonScan
           </SubMenuItem>
           <SubMenuItem as={LinkExternal} href="https://javaswap.io" bold={false} color="text" target="blank">
-            View on PCS Info
+            View on JAVA Info
           </SubMenuItem>
           <SubMenuItem as={Link} to="/profile">
             Go to profile page

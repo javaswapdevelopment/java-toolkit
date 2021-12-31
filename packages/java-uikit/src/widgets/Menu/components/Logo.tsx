@@ -1,15 +1,11 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
-import { LogoIcon, SpinnerIcon } from "../../../components/Svg";
+import styled, { keyframes } from "styled-components";
 import Flex from "../../../components/Box/Flex";
-import { HamburgerIcon, HamburgerCloseIcon, LogoIcon as LogoWithText } from "../icons";
-import MenuButton from "./MenuButton";
+import { LogoIcon, LogoWithTextIcon } from "../../../components/Svg";
 
 interface Props {
-  isPushed: boolean;
   isDark: boolean;
-  togglePush: () => void;
   href: string;
 }
 
@@ -19,7 +15,6 @@ const blink = keyframes`
 `;
 
 const StyledLink = styled(Link)`
-  
   display: flex;
   align-items: center;
   .mobile-icon {
@@ -27,16 +22,6 @@ const StyledLink = styled(Link)`
     ${({ theme }) => theme.mediaQueries.nav} {
       display: none;
     }
-  }
-  .hover-mobile{
-    position: absolute;
-    left: 60px;
-    width: 58px;
-    display: none;
-    top: 3px;
-  }
-  .hover-desktop{
-    display:none;
   }
   .desktop-icon {
     width: 160px;
@@ -48,52 +33,28 @@ const StyledLink = styled(Link)`
   .right-eye {
     animation-delay: 20ms;
   }
-  .container-mobile{
-    display:none;
-    width: 32px;
-  }
   &:hover {
-    .container-mobile{
-      display:inline;
-      ${({ theme }) => theme.mediaQueries.nav} {
-        display: none;
-      }
+    .left-eye,
+    .right-eye {
+      transform-origin: center 60%;
+      animation-name: ${blink};
+      animation-duration: 350ms;
+      animation-iteration-count: 1;
     }
-    .hover-mobile{
-      display:inline;
-      ${({ theme }) => theme.mediaQueries.nav} {
-        display: none;
-      }
-    }
-
-    .mobile-icon {
-      display:none;
-    }
-
   }
 `;
 
-const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
+const Logo: React.FC<Props> = ({ isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <>
-      <div className="container-mobile">
-        <SpinnerIcon className="hover-mobile" />
-      </div>
       <LogoIcon className="mobile-icon" />
-      <LogoWithText className="desktop-icon" isDark={isDark} />
+      <LogoWithTextIcon className="desktop-icon" isDark={isDark} />
     </>
   );
 
   return (
     <Flex>
-      <MenuButton aria-label="Toggle menu" onClick={togglePush} mr="24px">
-        {isPushed ? (
-          <HamburgerCloseIcon width="24px" color="textSubtle" />
-        ) : (
-          <HamburgerIcon width="24px" color="textSubtle" />
-        )}
-      </MenuButton>
       {isAbsoluteUrl ? (
         <StyledLink as="a" href={href} aria-label="Java home page">
           {innerLogo}
@@ -107,4 +68,4 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   );
 };
 
-export default React.memo(Logo, (prev, next) => prev.isPushed === next.isPushed && prev.isDark === next.isDark);
+export default React.memo(Logo, (prev, next) => prev.isDark === next.isDark);

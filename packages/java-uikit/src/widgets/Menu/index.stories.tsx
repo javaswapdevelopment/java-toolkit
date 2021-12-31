@@ -1,27 +1,33 @@
-import React, { useEffect, useState } from "react";
 import noop from "lodash/noop";
-import { BrowserRouter, Link, MemoryRouter } from "react-router-dom";
-import Flex from "../../components/Box/Flex";
+import React, { useState } from "react";
+import { BrowserRouter, MemoryRouter } from "react-router-dom";
 import Box from "../../components/Box/Box";
-import Heading from "../../components/Heading/Heading";
-import Text from "../../components/Text/Text";
-import Input from "../../components/Input/Input";
+import Flex from "../../components/Box/Flex";
 import Button from "../../components/Button/Button";
-import { Language } from "./types";
-import { links } from "./config";
-import { MenuEntry } from "./components/MenuEntry";
-import UserMenu from "./components/UserMenu";
-import { UserMenuDivider, UserMenuItem } from "./components/UserMenu/styles";
-import { variants, Variant } from "./components/UserMenu/types";
-import Menu from "./Menu";
-import { CogIcon, LanguageCurrencyIcon, LogoutIcon } from "../../components/Svg";
 import IconButton from "../../components/Button/IconButton";
+import DropdownMenu from "../../components/DropdownMenu/DropdownMenu";
+import { footerLinks } from "../../components/Footer/config";
+import Heading from "../../components/Heading/Heading";
+import Input from "../../components/Input/Input";
+import { CogIcon, LanguageCurrencyIcon } from "../../components/Svg";
+import Text from "../../components/Text/Text";
 import { Modal, ModalProps, useModal } from "../Modal";
+import UserMenu from "./components/UserMenu";
+import { Variant, variants } from "./components/UserMenu/types";
+import { links, userMenulinks } from "./config";
+import Menu from "./Menu";
+import { Language, NavProps } from "./types";
+import BottomDrawer from "../../components/BottomDrawer/BottomDrawer";
 
 export default {
   title: "Widgets/Menu",
   component: Menu,
-  argTypes: {},
+  argTypes: {
+    activeItem: {
+      options: ["Trade", "Earn", "Win"],
+      control: { type: "select" },
+    },
+  },
 };
 
 const langs: Language[] = [...Array(20)].map((_, i) => ({
@@ -30,45 +36,18 @@ const langs: Language[] = [...Array(20)].map((_, i) => ({
   locale: `Locale${i}`,
 }));
 
-const eventAlert: React.FC = () => {
-  return (
-    <Text color="primary">JavaSwap Event Tomorrow</Text>
-  );
-};
-
-
 const UserMenuComponent: React.FC<{ variant?: Variant; text?: string; account?: string }> = ({
   variant = variants.DEFAULT,
   text,
   account = "0x8b017905DC96B38f817473dc885F84D4C76bC113",
-}) => (
-  <UserMenu variant={variant} text={text} account={account}>
-    <UserMenuItem type="button" onClick={noop}>
-      Wallet
-    </UserMenuItem>
-    <UserMenuItem type="button">Transactions</UserMenuItem>
-    <UserMenuDivider />
-    <UserMenuItem type="button" disabled>
-      Dashboard
-    </UserMenuItem>
-    <UserMenuItem type="button" disabled>
-      Portfolio
-    </UserMenuItem>
-    <UserMenuItem as={Link} to="/profile">
-      React Router Link
-    </UserMenuItem>
-    <UserMenuItem as="a" href="https://javaswap.io" target="_blank">
-      Link
-    </UserMenuItem>
-    <UserMenuDivider />
-    <UserMenuItem as="button" onClick={noop}>
-      <Flex alignItems="center" justifyContent="space-between" width="100%">
-        Disconnect
-        <LogoutIcon />
-      </Flex>
-    </UserMenuItem>
-  </UserMenu>
-);
+}) => {
+  const accountEllipsis = account ? `${account.substring(0, 2)}...${account.substring(account.length - 4)}` : null;
+  return (
+    <DropdownMenu items={userMenulinks} py="12px">
+      <UserMenu account={text || accountEllipsis} avatarSrc="" variant={variant} />
+    </DropdownMenu>
+  );
+};
 
 const GlobalMenuModal: React.FC<ModalProps> = ({ title, onDismiss, ...props }) => (
   <Modal title={title} onDismiss={onDismiss} {...props}>
@@ -93,59 +72,80 @@ const GlobalMenuComponent: React.FC = () => {
   );
 };
 
-// This hook is used to simulate a props change, and force a re rendering
-const useProps = () => {
-  const [props, setProps] = useState({
-    account: "0xbdda50183d817c3289f895a4472eb475967dc980",
-    login: noop,
-    logout: noop,
-    isDark: false,
-    toggleTheme: noop,
-    langs,
-    setLang: noop,
-    currentLang: "EN",
-    javaPriceUsd: 0.023158668932877668,
-    links,
-    profile: null,
-    userMenu: <UserMenuComponent account="0xbdda50183d817c3289f895a4472eb475967dc980" />,
-    globalMenu: <GlobalMenuComponent />,
-  });
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setProps({
-        account: "0xbdda50183d817c3289f895a4472eb475967dc980",
-        login: noop,
-        logout: noop,
-        isDark: false,
-        toggleTheme: noop,
-        langs,
-        setLang: noop,
-        currentLang: "EN",
-        javaPriceUsd: 0.023158668932877668,
-        links,
-        profile: null,
-        userMenu: <UserMenuComponent account="0xbdda50183d817c3289f895a4472eb475967dc980" />,
-        globalMenu: <GlobalMenuComponent />,
-      });
-    }, 2000);
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
-  return props;
+const defaultProps = {
+  account: "0xbdda50183d817c3289f895a4472eb475967dc980",
+  login: noop,
+  logout: noop,
+  isDark: false,
+  toggleTheme: noop,
+  langs,
+  setLang: noop,
+  currentLang: "EN",
+  javaPriceUsd: 0.023158668932877668,
+  links,
+  subLinks: links[0].items,
+  footerLinks,
+  profile: null,
+  userMenu: <UserMenuComponent account="0xbdda50183d817c3289f895a4472eb475967dc980" />,
+  globalMenu: <GlobalMenuComponent />,
+  activeItem: "/swap",
+  activeSubItem: "https://javaswap.io/swap",
+  buyJavaLabel: "Buy JAVA",
 };
 
-export const Connected: React.FC = () => {
-  const props = useProps();
+const ConnectedTemplate: React.FC<NavProps> = (args) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <BrowserRouter>
-      <Menu {...props} alert={eventAlert(null)}>
+      <Menu {...args}>
         <div>
           <Heading as="h1" mb="8px">
             Page body
           </Heading>
+          <Button scale="sm" onClick={() => setIsOpen(true)}>
+            Show mobile drawer
+          </Button>
+          <BottomDrawer content={<Box p="16px">Example</Box>} isOpen={isOpen} setIsOpen={setIsOpen} />
+          <Text as="p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut
+          </Text>
+          <Text as="p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut
+          </Text>
+          <Text as="p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut
+          </Text>
           <Text as="p">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -164,11 +164,35 @@ export const Connected: React.FC = () => {
     </BrowserRouter>
   );
 };
+export const Connected = ConnectedTemplate.bind({});
+Connected.args = defaultProps;
+
+export const ConnectedWithBanner = ConnectedTemplate.bind({});
+ConnectedWithBanner.args = {
+  ...defaultProps,
+  banner: (
+    <Flex height="100%" p="16px" alignItems="center" justifyContent="center" background="#7645D9">
+      <Text color="invertedContrast" mr="8px">
+        Banner example
+      </Text>
+      <Button scale="sm">I am button</Button>
+    </Flex>
+  ),
+};
 
 export const NotConnected: React.FC = () => {
   return (
     <BrowserRouter>
-      <Menu isDark={false} toggleTheme={noop} langs={langs} setLang={noop} currentLang="EN" links={links} alert={eventAlert(null)}>
+      <Menu
+        isDark={false}
+        toggleTheme={noop}
+        langs={langs}
+        setLang={noop}
+        currentLang="EN"
+        links={links}
+        subLinks={null}
+        footerLinks={footerLinks}
+      >
         <div>
           <h1>Page body</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -189,7 +213,16 @@ export const NotConnected: React.FC = () => {
 export const WithoutConnectButton: React.FC = () => {
   return (
     <BrowserRouter>
-      <Menu isDark={false} toggleTheme={noop} langs={langs} setLang={noop} currentLang="EN" links={links} alert={eventAlert(null)}>
+      <Menu
+        isDark={false}
+        toggleTheme={noop}
+        langs={langs}
+        setLang={noop}
+        currentLang="EN"
+        links={links}
+        footerLinks={footerLinks}
+        subLinks={null}
+      >
         <div>
           <h1>No connect button on top</h1>
           This variant is needed for info site
@@ -198,17 +231,6 @@ export const WithoutConnectButton: React.FC = () => {
     </BrowserRouter>
   );
 };
-
-export const MenuEntryComponent: React.FC = () => {
-  return (
-    <Flex justifyContent="space-between" p="16px" style={{ backgroundColor: "wheat" }}>
-      <MenuEntry>Default</MenuEntry>
-      <MenuEntry secondary>Secondary</MenuEntry>
-      <MenuEntry isActive>isActive</MenuEntry>
-    </Flex>
-  );
-};
-
 
 export const WithSubmenuSelected: React.FC = () => {
   return (
@@ -221,7 +243,8 @@ export const WithSubmenuSelected: React.FC = () => {
         currentLang="EN"
         javaPriceUsd={0.23158668932877668}
         links={links}
-        alert={eventAlert(null)}
+        subLinks={null}
+        footerLinks={footerLinks}
       >
         <div>
           <Heading as="h1" mb="8px">

@@ -22,7 +22,8 @@ const Svg = styled.svg<SvgProps>`
   flex-shrink: 0;
   ${({ spin }) => spin && spinStyle}
   ${space}
-`;
+
+}`;
 
 Svg.defaultProps = {
   color: "text",

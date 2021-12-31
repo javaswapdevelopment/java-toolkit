@@ -1,3 +1,6 @@
+import { noop } from "lodash";
+import { DropdownMenuItems, DropdownMenuItemType } from "../../components/DropdownMenu/types";
+import { MenuItemsType } from "../../components/MenuItems/types";
 import { LinkStatus } from "./types";
 
 export const status = {
@@ -15,157 +18,154 @@ export const status = {
   },
 };
 
-export const links = [
+export const links: MenuItemsType[] = [
   {
-    label: "Home",
-    icon: "HomeIcon",
+    label: "Trade",
+    href: "/swap",
+    icon: "Swap",
+    items: [
+      {
+        label: "Exchange",
+        href: "https://javaswap.io/swap",
+      },
+      {
+        label: "Liquidity",
+        href: "https://javaswap.io/liquidity",
+      },
+      {
+        label: "Charts",
+        href: "https://javaswap.io/info/token/0x4afae971ac146d4028c3ed581eb307a1615e59fe",
+        iconName: "Chart",
+        isMobileOnly: true,
+      },
+    ],
+  },
+  {
+    label: "Earn",
     href: "/",
-  },
-  {
-    label: "Presale",
-    icon: "PresaleIcon",
-    href: "https://presale.javaswap.io/",
-  },
-  {
-    label: "Swap",
-    icon: "TradeIcon",
+    icon: "Earn",
     items: [
       {
-        label: "Trade",
-        href: "https://exchange.javaswap.io",
-        icon: "TradeIcon"
+        label: "Earn",
+        href: "/",
       },
       {
-        label: "Bridge",
-        href: "https://exchange.javaswap.io/#/pool",
-        icon: "BridgeIcon"
+        label: "Yield Farms",
+        href: "/",
+      },
+      {
+        label: "Syrup pools",
+        href: "/",
       },
     ],
   },
   {
-    label: "Farms",
-    icon: "FarmIcon",
-    href: "/farms",
-    status: status.LIVE,
-  },
-  {
-    label: "Pools",
-    icon: "PoolIcon",
-    href: "/syrup",
-  },
-  {
-    label: "Games",
-    icon: "GamesIcon",
+    label: "Win",
+    href: "/",
+    icon: "Trophy",
     items: [
       {
-        label: "JavaBid",
-        href: "/javabid",
-        icon: "JavaBidIcon",
+        label: "Win",
+        href: "/",
       },
       {
-        label: "Lucky Lotto",
-        href: "/lotto",
-        icon: "LottoIcon",
+        label: "Predictions",
+        href: "/",
+        status: status.LIVE,
       },
       {
-        label: "Flip Coin",
-        href: "/flip",
-        icon: "FlipIcon",
+        label: "Lottery",
+        href: "/",
       },
     ],
   },
   {
-    label: "Referrals",
-    icon: "ReferralIcon",
-    href: "/referral",
-  },
-  {
-    label: "NFT",
-    icon: "NftIcon",
-    href: "/nft",
-  },
-  {
-    label: "V1",
-    icon: "JavaSkeletonIcon",
-    href: "/v1",
-  },
-  {
-    label: "V2",
-    icon: "JavaGoldenIcon",
-    href: "/v2",
-  },
-  {
-    label: "IFO",
-    icon: "IfoIcon",
-    href: "/ifo",
-  },
-  {
-    label: "Analytics",
-    icon: "AnalyticIcon",
-    href: "/info",
-  },
-  {
-    label: "Audits",
-    icon: "AuditsIcon",
-    href: "/audits",
-  },
-  {
-    label: "More",
-    icon: "MoreIcon",
+    label: "",
+    href: "/",
+    icon: "More",
     items: [
       {
-        label: "Voting",
-        href: "https://voting.javaswap.io",
+        label: "Info & Analytics",
+        href: "/",
       },
       {
-        label: "Github",
-        href: "https://github.com/javaswapdevelopment",
+        label: "IFO Token Sales",
+        href: "/",
+        status: status.SOON,
       },
       {
-        label: "Docs",
-        href: "https://javaswap.gitbook.io/javaswap/",
+        type: DropdownMenuItemType.DIVIDER,
+      },
+      {
+        label: "NFT Collectibles",
+        href: "/",
+      },
+      {
+        label: "Team Leaderboard",
+        href: "/",
+      },
+      {
+        type: DropdownMenuItemType.DIVIDER,
       },
       {
         label: "Blog",
-        href: "https://javaswapofficial.medium.com/",
+        href: "/",
+      },
+      {
+        label: "Docs & Guides",
+        href: "/",
+        type: DropdownMenuItemType.EXTERNAL_LINK,
       },
     ],
   },
 ];
 
-export const socials = [
+export const userMenulinks: DropdownMenuItems[] = [
   {
-    label: "Telegram",
-    icon: "TelegramIcon",
-    items: [
-      {
-        label: "English",
-        href: "https://t.me/JavaSwap_Official",
-      },
-      {
-        label: "Community",
-        href: "https://t.me/JavaSwapOfficialCommunity"
-      }
-    ],
+    label: "Wallet",
+    onClick: noop,
+    type: DropdownMenuItemType.BUTTON,
   },
   {
-    label: "Twitter",
-    icon: "TwitterIcon",
-    href: "https://twitter.com/Javaswap_",
+    label: "Transactions",
+    type: DropdownMenuItemType.BUTTON,
   },
   {
-    label: "Medium",
-    icon: "MediumIcon",
-    href: "https://javaswapofficial.medium.com/",
+    type: DropdownMenuItemType.DIVIDER,
   },
   {
-    label: "Discord",
-    icon: "DiscordIcon",
-    href: " https://discord.gg/49F8G3VhHp",
+    type: DropdownMenuItemType.BUTTON,
+    disabled: true,
+    label: "Dashboard",
+  },
+  {
+    type: DropdownMenuItemType.BUTTON,
+    disabled: true,
+    label: "Portfolio",
+  },
+  {
+    label: "Profile",
+    href: "/profile",
+  },
+  {
+    type: DropdownMenuItemType.EXTERNAL_LINK,
+    href: "https://javaswap.io/",
+    label: "Link",
+  },
+  {
+    type: DropdownMenuItemType.DIVIDER,
+  },
+  {
+    type: DropdownMenuItemType.BUTTON,
+    onClick: noop,
+    label: "Disconnect",
   },
 ];
 
-export const MENU_HEIGHT = 64;
+export const MENU_HEIGHT = 56;
 export const MENU_ENTRY_HEIGHT = 48;
+export const MOBILE_MENU_HEIGHT = 44;
 export const SIDEBAR_WIDTH_FULL = 240;
 export const SIDEBAR_WIDTH_REDUCED = 56;
+export const TOP_BANNER_HEIGHT = 70;
+export const TOP_BANNER_HEIGHT_MOBILE = 84;
