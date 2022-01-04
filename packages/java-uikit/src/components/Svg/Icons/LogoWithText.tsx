@@ -25,7 +25,7 @@ const Logo: React.FC<LogoProps> = ({ isDark, ...props }) => {
         </clipPath>
         <style>
           {
-            ".prefix__cls-1{fill:none}.prefix__cls-2{fill:"+textColor+"}.prefix__cls-6{fill:#570000}.prefix__cls-9{fill:#fff}"
+            ".prefix__cls-1{fill:none}.prefix__cls-2{}.prefix__cls-6{fill:#570000}.prefix__cls-9{fill:#fff}"
           }
         </style>
       </defs>
