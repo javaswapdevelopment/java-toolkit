@@ -38,5 +38,21 @@
     "chainId": 137,
     "decimals": 8,
     "logoURI": "https://tokens.javaswap.io/images/0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6.png"
+  },
+  {
+    "name": "Daily COP",
+    "symbol": "DLY",
+    "address": "0x1659fFb2d40DfB1671Ac226A0D9Dcc95A774521A",
+    "chainId": 137,
+    "decimals": 18,
+    "logoURI": "https://tokens.javaswap.io/images/0x1659fFb2d40DfB1671Ac226A0D9Dcc95A774521A.png"
+  },
+  {
+    "name": "USDT Token",
+    "symbol": "USDT",
+    "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+    "chainId": 137,
+    "decimals": 6,
+    "logoURI": "https://tokens.javaswap.io/images/0xc2132D05D31c914a87C6611C10748AEb04B58e8F.png"
   }
 ]
