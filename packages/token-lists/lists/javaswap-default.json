@@ -1,10 +1,10 @@
 {
   "name": "JavaSwap Default",
-  "timestamp": "2022-03-03T10:48:34.133Z",
+  "timestamp": "2022-03-03T22:47:23.490Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 6
+    "patch": 7
   },
   "logoURI": "https://tokens.javaswap.io/images/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270.png",
   "keywords": [
@@ -54,7 +54,7 @@
     },
     {
       "name": "Daily COP",
-      "symbol": "DLY",
+      "symbol": "DLYCOP",
       "address": "0x1659fFb2d40DfB1671Ac226A0D9Dcc95A774521A",
       "chainId": 137,
       "decimals": 18,

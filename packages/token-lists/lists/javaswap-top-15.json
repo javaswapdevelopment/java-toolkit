@@ -1,10 +1,10 @@
 {
   "name": "JavaSwap Top 15",
-  "timestamp": "2022-03-03T00:00:00.566Z",
+  "timestamp": "2022-03-03T22:48:11.455Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 5
+    "patch": 6
   },
   "logoURI": "https://tokens.javaswap.io/images/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270.png",
   "keywords": [
@@ -21,6 +21,14 @@
       "logoURI": "https://tokens.javaswap.io/images/0x4aFaE971Ac146d4028c3Ed581Eb307A1615E59Fe.png"
     },
     {
+      "name": "Daily COP",
+      "symbol": "DLYCOP",
+      "address": "0x1659fFb2d40DfB1671Ac226A0D9Dcc95A774521A",
+      "chainId": 137,
+      "decimals": 18,
+      "logoURI": "https://tokens.javaswap.io/images/0x1659fFb2d40DfB1671Ac226A0D9Dcc95A774521A.png"
+    },
+    {
       "name": "USD Coin",
       "symbol": "USDC",
       "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
@@ -29,20 +37,12 @@
       "logoURI": "https://tokens.javaswap.io/images/0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174.png"
     },
     {
-      "name": "WMATIC Token",
-      "symbol": "WMATIC",
-      "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+      "name": "USDT Token",
+      "symbol": "USDT",
+      "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
       "chainId": 137,
-      "decimals": 18,
-      "logoURI": "https://tokens.javaswap.io/images/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270.png"
-    },
-    {
-      "name": "Wrapped ETH",
-      "symbol": "WETH",
-      "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-      "chainId": 137,
-      "decimals": 18,
-      "logoURI": "https://tokens.javaswap.io/images/0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619.png"
+      "decimals": 6,
+      "logoURI": "https://tokens.javaswap.io/images/0xc2132D05D31c914a87C6611C10748AEb04B58e8F.png"
     },
     {
       "name": "Wrapped BTC",
@@ -53,20 +53,20 @@
       "logoURI": "https://tokens.javaswap.io/images/0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6.png"
     },
     {
-      "name": "Daily COP",
-      "symbol": "DLY",
-      "address": "0x1659fFb2d40DfB1671Ac226A0D9Dcc95A774521A",
+      "name": "Wrapped ETH",
+      "symbol": "WETH",
+      "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
       "chainId": 137,
       "decimals": 18,
-      "logoURI": "https://tokens.javaswap.io/images/0x1659fFb2d40DfB1671Ac226A0D9Dcc95A774521A.png"
+      "logoURI": "https://tokens.javaswap.io/images/0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619.png"
     },
     {
-      "name": "USDT Token",
-      "symbol": "USDT",
-      "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+      "name": "WMATIC Token",
+      "symbol": "WMATIC",
+      "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
       "chainId": 137,
-      "decimals": 6,
-      "logoURI": "https://tokens.javaswap.io/images/0xc2132D05D31c914a87C6611C10748AEb04B58e8F.png"
+      "decimals": 18,
+      "logoURI": "https://tokens.javaswap.io/images/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270.png"
     }
   ]
 }

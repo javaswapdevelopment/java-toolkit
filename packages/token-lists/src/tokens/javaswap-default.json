@@ -41,7 +41,7 @@
   },
   {
     "name": "Daily COP",
-    "symbol": "DLY",
+    "symbol": "DLYCOP",
     "address": "0x1659fFb2d40DfB1671Ac226A0D9Dcc95A774521A",
     "chainId": 137,
     "decimals": 18,
