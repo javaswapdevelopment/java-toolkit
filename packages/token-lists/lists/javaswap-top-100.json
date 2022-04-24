@@ -1,10 +1,10 @@
 {
   "name": "JavaSwap Top 100",
-  "timestamp": "2022-03-03T22:47:58.007Z",
+  "timestamp": "2022-04-24T17:50:37.899Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 6
+    "patch": 7
   },
   "logoURI": "https://tokens.javaswap.io/images/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270.png",
   "keywords": [
@@ -27,6 +27,46 @@
       "chainId": 137,
       "decimals": 18,
       "logoURI": "https://tokens.javaswap.io/images/0x1659fFb2d40DfB1671Ac226A0D9Dcc95A774521A.png"
+    },
+    {
+      "name": "Fantom Token",
+      "symbol": "FTM",
+      "address": "0xC9c1c1c20B3658F8787CC2FD702267791f224Ce1",
+      "chainId": 137,
+      "decimals": 18,
+      "logoURI": "https://tokens.javaswap.io/images/0xC9c1c1c20B3658F8787CC2FD702267791f224Ce1.png"
+    },
+    {
+      "name": "Quickswap",
+      "symbol": "QUICK",
+      "address": "0x831753DD7087CaC61aB5644b308642cc1c33Dc13",
+      "chainId": 137,
+      "decimals": 18,
+      "logoURI": "https://tokens.javaswap.io/images/0x831753DD7087CaC61aB5644b308642cc1c33Dc13.png"
+    },
+    {
+      "name": "SHIBA INU",
+      "symbol": "SHIB",
+      "address": "0x6f8a06447Ff6FcF75d803135a7de15CE88C1d4ec",
+      "chainId": 137,
+      "decimals": 18,
+      "logoURI": "https://tokens.javaswap.io/images/0x6f8a06447Ff6FcF75d803135a7de15CE88C1d4ec.png"
+    },
+    {
+      "name": "SushiToken",
+      "symbol": "SUSHI",
+      "address": "0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a",
+      "chainId": 137,
+      "decimals": 18,
+      "logoURI": "https://tokens.javaswap.io/images/0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a.png"
+    },
+    {
+      "name": "Uniswap",
+      "symbol": "UNI",
+      "address": "0xb33EaAd8d922B1083446DC23f610c2567fB5180f",
+      "chainId": 137,
+      "decimals": 18,
+      "logoURI": "https://tokens.javaswap.io/images/0xb33EaAd8d922B1083446DC23f610c2567fB5180f.png"
     },
     {
       "name": "USD Coin",

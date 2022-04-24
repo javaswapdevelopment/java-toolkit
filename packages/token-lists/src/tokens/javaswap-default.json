@@ -54,5 +54,45 @@
     "chainId": 137,
     "decimals": 6,
     "logoURI": "https://tokens.javaswap.io/images/0xc2132D05D31c914a87C6611C10748AEb04B58e8F.png"
+  },
+  {
+    "name": "Uniswap",
+    "symbol": "UNI",
+    "address": "0xb33EaAd8d922B1083446DC23f610c2567fB5180f",
+    "chainId": 137,
+    "decimals": 18,
+    "logoURI": "https://tokens.javaswap.io/images/0xb33EaAd8d922B1083446DC23f610c2567fB5180f.png"
+  },
+  {
+    "name": "Quickswap",
+    "symbol": "QUICK",
+    "address": "0x831753DD7087CaC61aB5644b308642cc1c33Dc13",
+    "chainId": 137,
+    "decimals": 18,
+    "logoURI": "https://tokens.javaswap.io/images/0x831753DD7087CaC61aB5644b308642cc1c33Dc13.png"
+  },
+  {
+    "name": "SushiToken",
+    "symbol": "SUSHI",
+    "address": "0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a",
+    "chainId": 137,
+    "decimals": 18,
+    "logoURI": "https://tokens.javaswap.io/images/0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a.png"
+  },
+  {
+    "name": "Fantom Token",
+    "symbol": "FTM",
+    "address": "0xC9c1c1c20B3658F8787CC2FD702267791f224Ce1",
+    "chainId": 137,
+    "decimals": 18,
+    "logoURI": "https://tokens.javaswap.io/images/0xC9c1c1c20B3658F8787CC2FD702267791f224Ce1.png"
+  },
+  {
+    "name": "SHIBA INU",
+    "symbol": "SHIB",
+    "address": "0x6f8a06447Ff6FcF75d803135a7de15CE88C1d4ec",
+    "chainId": 137,
+    "decimals": 18,
+    "logoURI": "https://tokens.javaswap.io/images/0x6f8a06447Ff6FcF75d803135a7de15CE88C1d4ec.png"
   }
 ]
