@@ -82,10 +82,10 @@
   {
     "name": "Fantom Token",
     "symbol": "FTM",
-    "address": "0xC9c1c1c20B3658F8787CC2FD702267791f224Ce1",
+    "address": "0xB85517b87BF64942adf3A0B9E4c71E4Bc5Caa4e5",
     "chainId": 137,
     "decimals": 18,
-    "logoURI": "https://tokens.javaswap.io/images/0xC9c1c1c20B3658F8787CC2FD702267791f224Ce1.png"
+    "logoURI": "https://tokens.javaswap.io/images/0xB85517b87BF64942adf3A0B9E4c71E4Bc5Caa4e5.png"
   },
   {
     "name": "SHIBA INU",
